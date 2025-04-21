@@ -45,6 +45,29 @@ launchers = [
     "launch_thrust" : 38035,
   },
   {
+    "name" : "Saturn V",
+    "stages" : [
+      (2214, 137, 283),
+      (496.2, 40.1, 421),
+      (123, 15.2, 421),
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : 9285,
+    "launch_thrust" : 34500,
+  },
+  {
+    "name" : "Proton M",
+    "stages" : [
+      (428.3, 30.6, 302),
+      (157.3, 11, 327),
+      (46.562, 3.5, 325),
+      (19.8, 2.37, 326),
+    ],
+    "min_stages" : 3,
+    "orbit_deltav" : 9165,
+    "launch_thrust" : 10532,
+  },
+  {
     "name" : "Centaur G'",
     "stages" : [
       (22.8, 2.761, 446.4),

@@ -24,28 +24,26 @@ def c3_deltav(c3, height=LOW_ORBIT, planet=EARTH):
 
 # transfer from a circular orbit at start to an elliptical orbit of start x end
 # the first half of a hohmann transfer
-def halfmann(start, end, planet=EARTH):
+def halfmann(start, end, inclination=0, planet=EARTH):
+  inclination *= pi / 180
   sma = (start + end) / 2
   initial = circular(start, planet)
-  final = elliptical(start, sma, planet)
-  return abs(final - initial)
+  velocity = elliptical(start, sma, planet)
+  horizontal = velocity * cos(inclination)
+  vertical = velocity * sin(inclination)
+  final_burn = hypot((horizontal - initial), vertical)
+  return final_burn
 
 # hohmann transfer from circular orbits at start and end (above the surface)
 # allows for a plane change, assumed to be part of the second burn
 # splitting the plane change across both burns is more efficient, but not accounted for here
 def hohmann(start, end, inclination=0, planet=EARTH):
-  inital_burn = halfmann(start, end, planet)
-  inclination *= pi / 180
-  velocity = circular(end, planet)
-  horizontal = velocity * cos(inclination)
-  vertical = velocity * sin(inclination)
-  initial = velocity - halfmann(end, start, planet)
-  final_burn = hypot((horizontal - initial), vertical)
-  return inital_burn + final_burn
+  initial_burn = halfmann(start, end, 0, planet)
+  return initial_burn + halfmann(end, start, inclination, planet)
 
 # Transfer from a circular orbit around a central body to a circular orbit around the target body
 def transfer(start_height, target_height, final_height, target_planet, return_trip=False, home_planet=EARTH):
-  final_injection = (hypot(halfmann(target_height, start_height), escape(final_height, target_planet)) - circular(final_height, target_planet))
+  final_injection = (hypot(halfmann(target_height, start_height, planet=home_planet), escape(final_height, target_planet)) - circular(final_height, target_planet))
   if return_trip:
     final_injection *= 2
   return halfmann(start_height, target_height, planet=home_planet) + final_injection
