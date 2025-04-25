@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 from time import perf_counter
 from delta_v import delta_v
 from launchers import *
-from launcher_groups import *
 from orbits import *
 
 start = perf_counter()
