@@ -17,6 +17,17 @@ launchers = [
     "orbit_deltav" : 9275,
     "launch_thrust" : 7607,
   },
+  {
+    "name" : "Falcon 9 ASDS",
+    "stages" : [
+      (433.1, 69, 297),
+      FALCON_2,
+    ],
+    "min_stages" : 2,
+    # assumed identical to Falcon 9 expendable GTO data
+    "orbit_deltav" : 9275,
+    "launch_thrust" : 7607,
+  },
   # crossfeed version
   {
     "name" : "Falcon Heavy",
