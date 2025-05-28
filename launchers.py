@@ -28,6 +28,17 @@ launchers = [
     "orbit_deltav" : 9275,
     "launch_thrust" : 7607,
   },
+  {
+    "name" : "Falcon 9 RTLS",
+    "stages" : [
+      (433.1, 124.6, 297),
+      FALCON_2,
+    ],
+    "min_stages" : 2,
+    # assumed identical to Falcon 9 expendable GTO data
+    "orbit_deltav" : 9275,
+    "launch_thrust" : 7607,
+  },
   # crossfeed version
   {
     "name" : "Falcon Heavy",
@@ -77,6 +88,16 @@ launchers = [
     "min_stages" : 3,
     "orbit_deltav" : 9165,
     "launch_thrust" : 10532,
+  },
+  {
+    "name" : "Zenit 2",
+    "stages" : [
+      (354.35, 27.564, 324),
+      (90.047, 8.307, 350),
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : None,
+    "launch_thrust" : 7550,
   },
   {
     "name" : "Centaur G'",
