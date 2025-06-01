@@ -51,7 +51,7 @@ for launcher in launchers:
       while True:
         test_payload = increment_count * payload_increment
         margin, wet_mass = delta_v(test_payload, sub_stages, launcher_deltav)
-        twr = thrust / wet_mass / EARTH[GRAVITY]
+        twr = thrust / wet_mass / DEFAULT[GRAVITY]
         if margin < required_margin or twr < min_twr:
           increment_count = (increment_count + working_increments) // 2
           if working_increments == increment_count:
@@ -67,7 +67,7 @@ for launcher in launchers:
     else:
       margin, wet_mass = delta_v(payload, sub_stages, launcher_deltav)
       if margin >= required_margin:
-        twr = thrust / wet_mass / EARTH[GRAVITY]
+        twr = thrust / wet_mass / DEFAULT[GRAVITY]
         if twr >= min_twr:
           variant_name = f"{name} ({stage_count} stages)" if stage_count_required else name
           solutions.append((wet_mass, variant_name, margin, twr))
