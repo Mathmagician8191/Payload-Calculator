@@ -1,0 +1,29 @@
+{
+  "default" : "Earth",
+  "bodies" : [
+    {
+      "name" : "Sun",
+      "radius" : 695700,
+      "gravity" : 274,
+      "rotation" : 1997,
+      "parent" : null,
+      "height" : 0
+    },
+    {
+      "name" : "Earth",
+      "radius" : 6378,
+      "gravity" : 9.81,
+      "rotation" : 465.1,
+      "parent" : "Sun",
+      "height" : 149598023
+    },
+    {
+      "name" : "Moon",
+      "radius" : 1738.1,
+      "gravity" : 1.625,
+      "rotation" : 4.625,
+      "parent" : "Earth",
+      "height" : 384399
+    }
+  ]
+}

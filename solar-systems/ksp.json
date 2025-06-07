@@ -1,0 +1,37 @@
+{
+  "default" : "Kerbin",
+  "bodies" : [
+    {
+      "name" : "Kerbol",
+      "radius" : 261600,
+      "gravity" : 17.1,
+      "rotation" : 3804.8,
+      "parent" : null,
+      "height" : 0
+    },
+    {
+      "name" : "Kerbin",
+      "radius" : 600,
+      "gravity" : 9.81,
+      "rotation" : 174.94,
+      "parent" : "Kerbol",
+      "height" : 13599840.256
+    },
+    {
+      "name" : "Moon",
+      "radius" : 200,
+      "gravity" : 1.63,
+      "rotation" : 9.0416,
+      "parent" : "Kerbin",
+      "height" : 12000
+    },
+    {
+      "name" : "Minmus",
+      "radius" : 60,
+      "gravity" : 0.491,
+      "rotation" : 9.3315,
+      "parent" : "Kerbin",
+      "height" : 47000
+    }
+  ]
+}
