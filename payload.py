@@ -18,7 +18,7 @@ payload = None
 
 payload_stages = []
 
-required_deltav = transfer(LOW_ORBIT, MOON_HEIGHT, 50, MOON)
+required_deltav = transfer(LOW_ORBIT, 50, "Moon")
 
 include_orbit = True
 

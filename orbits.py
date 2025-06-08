@@ -42,7 +42,9 @@ def hohmann(start, end, inclination=0, planet=DEFAULT):
   return initial_burn + halfmann(end, start, inclination, planet)
 
 # Transfer from a circular orbit around a central body to a circular orbit around the target body
-def transfer(start_height, target_height, final_height, target_planet, return_trip=False, home_planet=DEFAULT):
+def transfer(start_height, final_height, target_planet, return_trip=False, home_planet=DEFAULT):
+  target_planet = systems[target_planet]
+  target_height = target_planet[HEIGHT]
   final_injection = (hypot(halfmann(target_height, start_height, planet=home_planet), escape(final_height, target_planet)) - circular(final_height, target_planet))
   if return_trip:
     final_injection *= 2
@@ -67,7 +69,7 @@ def plane(angle, height, planet=DEFAULT):
   vertical = velocity * sin(angle)
   return hypot((velocity - horizontal), vertical)
 
-# calculate the height of a keostationary orbit
+# calculate the height of a stationary orbit
 def stationary_height(planet=DEFAULT):
   radius = planet[RADIUS]
   return radius * ((1000 * planet[GRAVITY] * radius / planet[ROTATION] ** 2) ** (1 / 3) - 1)
