@@ -45,7 +45,7 @@ for name, stage_counts in selected_launchers:
         payload = min_payload
         while True:
           launch_performance, wet_mass = delta_v(payload, sub_stages, orbit_deltav)
-          twr = thrust / wet_mass / EARTH[GRAVITY]
+          twr = thrust / wet_mass / DEFAULT[GRAVITY]
           if twr >= min_twr:
             if plot_c3 is not None:
               planet, altitude = plot_c3
