@@ -19,7 +19,7 @@ def load_planet(radius, gravity, rotation, parent, height):
   radius *= SCALE
   rotation *= SCALE / DAY_SCALE
   gm = radius ** 2 * 1000 * gravity
-  return (radius, gravity, gm, rotation, parent, height)
+  return (radius, gravity, gm, rotation, parent, height * SCALE)
 
 filepath = f"solar-systems/{SYSTEM}.json"
 
