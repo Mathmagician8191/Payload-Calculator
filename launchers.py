@@ -100,6 +100,27 @@ launchers = [
     "launch_thrust" : 7550,
   },
   {
+    "name" : "Electron Block 1",
+    "stages" : [
+      (9.25, 0.95, 303),
+      (2.15, 0.25, 333),
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : 8978,
+    "launch_thrust" : 162,
+  },
+  # Only factors in new specific impulse values - needs further adjustment
+  {
+    "name" : "Electron Block 2",
+    "stages" : [
+      (9.25, 0.95, 311),
+      (2.15, 0.25, 343),
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : 8978,
+    "launch_thrust" : 162,
+  },
+  {
     "name" : "Centaur G'",
     "stages" : [
       (22.8, 2.761, 446.4),
