@@ -1,16 +1,9 @@
-FALCON_BOOSTERS = (866.2, 44.4, 297)
-FALCON_CORE = (433.1, 22.2, 311)
-FALCON_2 = (111.5, 4, 348)
-STAR_48B = (2.137, 0.126, 286)
-IUS_S1 = (10.4, 0.7, 295.5)
-IUS_S2 = (3, 0.3, 289.1)
-
 launchers = [
   {
     "name" : "Falcon 9",
     "stages" : [
       (433.1, 22.2, 297),
-      FALCON_2,
+      "Falcon 9 2nd stage",
     ],
     "min_stages" : 2,
     # value adjusted to fit with Falcon 9 GTO payload
@@ -21,7 +14,7 @@ launchers = [
     "name" : "Falcon 9 ASDS",
     "stages" : [
       (433.1, 69, 297),
-      FALCON_2,
+      "Falcon 9 2nd stage",
     ],
     "min_stages" : 2,
     # assumed identical to Falcon 9 expendable GTO data
@@ -32,7 +25,7 @@ launchers = [
     "name" : "Falcon 9 RTLS",
     "stages" : [
       (433.1, 124.6, 297),
-      FALCON_2,
+      "Falcon 9 2nd stage",
     ],
     "min_stages" : 2,
     # assumed identical to Falcon 9 expendable GTO data
@@ -43,9 +36,9 @@ launchers = [
   {
     "name" : "Falcon Heavy",
     "stages" : [
-      FALCON_BOOSTERS,
-      FALCON_CORE,
-      FALCON_2,
+      "Falcon Heavy Side Booster x2",
+      "Falcon Heavy Core",
+      "Falcon 9 2nd stage",
     ],
     "min_stages" : 2,
     # value taken from falcon 9 - overestimate as it gives less LEO payload than a non-crossfeed falcon heavy
@@ -56,10 +49,10 @@ launchers = [
   {
     "name" : "Falcon Quad Heavy",
     "stages" : [
-      FALCON_BOOSTERS,
-      FALCON_BOOSTERS,
-      FALCON_CORE,
-      FALCON_2,
+      "Falcon Heavy Side Booster x2",
+      "Falcon Heavy Side Booster x2",
+      "Falcon Heavy Core",
+      "Falcon 9 2nd stage",
     ],
     "min_stages" : 3,
     # value taken from falcon 9 - overestimate
@@ -141,8 +134,8 @@ launchers = [
   {
     "name" : "Inertial Upper Stage",
     "stages" : [
-      IUS_S1,
-      IUS_S2,
+      "IUS Stage 1",
+      "IUS Stage 2",
     ],
     "min_stages" : 1,
     "orbit_deltav" : None,
@@ -151,7 +144,7 @@ launchers = [
   {
     "name" : "Inertial Upper Stage 2",
     "stages" : [
-      IUS_S2,
+      "IUS Stage 2",
     ],
     "min_stages" : 1,
     "orbit_deltav" : None,

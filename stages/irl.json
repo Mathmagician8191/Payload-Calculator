@@ -1,0 +1,44 @@
+[
+  {
+    "name" : "Falcon Heavy Side Booster x2",
+    "wet_mass" : 866.2,
+    "dry_mass" : 44.4,
+    "isp" : 297
+  },
+  {
+    "name" : "Falcon Heavy Core",
+    "wet_mass" : 433.1,
+    "dry_mass" : 22.2,
+    "isp" : 311
+  },
+  {
+    "name" : "Falcon 9 Booster",
+    "wet_mass" : 433.1,
+    "dry_mass" : 22.2,
+    "isp" : 297
+  },
+  {
+    "name" : "Falcon 9 2nd stage",
+    "wet_mass" : 111.5,
+    "dry_mass" : 4,
+    "isp" : 348
+  },
+  {
+    "name" : "Star 48B",
+    "wet_mass" : 2.137,
+    "dry_mass" : 0.126,
+    "isp" : 286
+  },
+  {
+    "name" : "IUS Stage 1",
+    "wet_mass" : 10.4,
+    "dry_mass" : 0.7,
+    "isp" : 295.5
+  },
+  {
+    "name" : "IUS Stage 2",
+    "wet_mass" : 3,
+    "dry_mass" : 0.3,
+    "isp" : 289.1
+  }
+]
