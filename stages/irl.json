@@ -24,6 +24,12 @@
     "isp" : 348
   },
   {
+    "name" : "Dragon 2",
+    "wet_mass" : 9.099,
+    "dry_mass" : 7.711,
+    "isp" : 300
+  },
+  {
     "name" : "Star 48B",
     "wet_mass" : 2.137,
     "dry_mass" : 0.126,
