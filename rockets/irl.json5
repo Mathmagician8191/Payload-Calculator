@@ -2,8 +2,8 @@
   {
     "name" : "Falcon 9",
     "stages" : [
-      [433.1, 22.2, 297],
-      "Falcon 9 2nd stage"
+      "Falcon 9 Stage 1",
+      "Falcon 9 Stage 2"
     ],
     "min_stages" : 2,
     // value adjusted to fit with Falcon 9 GTO payload
@@ -13,8 +13,8 @@
   {
     "name" : "Falcon 9 ASDS",
     "stages" : [
-      [433.1, 69, 297],
-      "Falcon 9 2nd stage"
+      "Falcon 9 Stage 1 (ASDS)",
+      "Falcon 9 Stage 2"
     ],
     "min_stages" : 2,
     // assumed identical to Falcon 9 expendable GTO data
@@ -24,8 +24,41 @@
   {
     "name" : "Falcon 9 RTLS",
     "stages" : [
-      [433.1, 124.6, 297],
-      "Falcon 9 2nd stage"
+      "Falcon 9 Stage 1 (RTLS)",
+      "Falcon 9 Stage 2"
+    ],
+    "min_stages" : 2,
+    // assumed identical to Falcon 9 expendable GTO data
+    "orbit_deltav" : 9275,
+    "launch_thrust" : 7607
+  },
+  {
+    "name" : "Falcon 9SL",
+    "stages" : [
+      "Falcon 9 Stage 1",
+      "Falcon 9 Stage 2SL"
+    ],
+    "min_stages" : 2,
+    // assumed identical to normal Falcon 9 GTO data
+    "orbit_deltav" : 9275,
+    "launch_thrust" : 7607
+  },
+  {
+    "name" : "Falcon 9SL ASDS",
+    "stages" : [
+      "Falcon 9 Stage 1 (ASDS)",
+      "Falcon 9 Stage 2SL"
+    ],
+    "min_stages" : 2,
+    // assumed identical to Falcon 9 expendable GTO data
+    "orbit_deltav" : 9275,
+    "launch_thrust" : 7607
+  },
+  {
+    "name" : "Falcon 9SL RTLS",
+    "stages" : [
+      "Falcon 9 Stage 1 (RTLS)",
+      "Falcon 9 Stage 2SL"
     ],
     "min_stages" : 2,
     // assumed identical to Falcon 9 expendable GTO data
@@ -38,7 +71,7 @@
     "stages" : [
       "Falcon Heavy Side Booster x2",
       "Falcon Heavy Core",
-      "Falcon 9 2nd stage"
+      "Falcon 9 Stage 2"
     ],
     "min_stages" : 2,
     // value taken from falcon 9 - overestimate as it gives less LEO payload than a non-crossfeed falcon heavy
@@ -52,7 +85,7 @@
       "Falcon Heavy Side Booster x2",
       "Falcon Heavy Side Booster x2",
       "Falcon Heavy Core",
-      "Falcon 9 2nd stage"
+      "Falcon 9 Stage 2"
     ],
     "min_stages" : 3,
     // value taken from falcon 9 - overestimate

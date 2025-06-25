@@ -1,4 +1,9 @@
 import pyjson5
 
-with open("rockets/irl.json5") as file:
-  launchers = pyjson5.load(file)
+launcher_groups = ["irl"]
+
+launchers = []
+
+for group in launcher_groups:
+  with open(f"rockets/{group}.json5") as file:
+    launchers += pyjson5.load(file)
