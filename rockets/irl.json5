@@ -1,0 +1,162 @@
+[
+  {
+    "name" : "Falcon 9",
+    "stages" : [
+      [433.1, 22.2, 297],
+      "Falcon 9 2nd stage"
+    ],
+    "min_stages" : 2,
+    // value adjusted to fit with Falcon 9 GTO payload
+    "orbit_deltav" : 9275,
+    "launch_thrust" : 7607
+  },
+  {
+    "name" : "Falcon 9 ASDS",
+    "stages" : [
+      [433.1, 69, 297],
+      "Falcon 9 2nd stage"
+    ],
+    "min_stages" : 2,
+    // assumed identical to Falcon 9 expendable GTO data
+    "orbit_deltav" : 9275,
+    "launch_thrust" : 7607
+  },
+  {
+    "name" : "Falcon 9 RTLS",
+    "stages" : [
+      [433.1, 124.6, 297],
+      "Falcon 9 2nd stage"
+    ],
+    "min_stages" : 2,
+    // assumed identical to Falcon 9 expendable GTO data
+    "orbit_deltav" : 9275,
+    "launch_thrust" : 7607
+  },
+  // crossfeed version
+  {
+    "name" : "Falcon Heavy",
+    "stages" : [
+      "Falcon Heavy Side Booster x2",
+      "Falcon Heavy Core",
+      "Falcon 9 2nd stage"
+    ],
+    "min_stages" : 2,
+    // value taken from falcon 9 - overestimate as it gives less LEO payload than a non-crossfeed falcon heavy
+    "orbit_deltav" : 9254,
+    "launch_thrust" : 22821
+  },
+  // crossfeed version
+  {
+    "name" : "Falcon Quad Heavy",
+    "stages" : [
+      "Falcon Heavy Side Booster x2",
+      "Falcon Heavy Side Booster x2",
+      "Falcon Heavy Core",
+      "Falcon 9 2nd stage"
+    ],
+    "min_stages" : 3,
+    // value taken from falcon 9 - overestimate
+    "orbit_deltav" : 9254,
+    "launch_thrust" : 38035
+  },
+  {
+    "name" : "Saturn V",
+    "stages" : [
+      [2214, 137, 283],
+      [496.2, 40.1, 421],
+      [123, 15.2, 421]
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : 9285,
+    "launch_thrust" : 34500
+  },
+  {
+    "name" : "Proton M",
+    "stages" : [
+      [428.3, 30.6, 302],
+      [157.3, 11, 327],
+      [46.562, 3.5, 325],
+      [19.8, 2.37, 326]
+    ],
+    "min_stages" : 3,
+    "orbit_deltav" : 9165,
+    "launch_thrust" : 10532
+  },
+  {
+    "name" : "Zenit 2",
+    "stages" : [
+      [354.35, 27.564, 324],
+      [90.047, 8.307, 350]
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : null,
+    "launch_thrust" : 7550
+  },
+  {
+    "name" : "Electron Block 1",
+    "stages" : [
+      [9.25, 0.95, 303],
+      [2.15, 0.25, 333]
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : 8978,
+    "launch_thrust" : 162
+  },
+  // Only factors in new specific impulse values - needs further adjustment
+  {
+    "name" : "Electron Block 2",
+    "stages" : [
+      [9.25, 0.95, 311],
+      [2.15, 0.25, 343]
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : 8978,
+    "launch_thrust" : 162
+  },
+  {
+    "name" : "Centaur G'",
+    "stages" : [
+      [22.8, 2.761, 446.4]
+    ],
+    "min_stages" : 1,
+    "orbit_deltav" : null,
+    "launch_thrust" : 146.8
+  },
+  {
+    "name" : "Centaur G",
+    "stages" : [
+      [16.928, 3.06, 440.4]
+    ],
+    "min_stages" : 1,
+    "orbit_deltav" : null,
+    "launch_thrust" : 133.4
+  },
+  {
+    "name" : "Inertial Upper Stage",
+    "stages" : [
+      "IUS Stage 1",
+      "IUS Stage 2"
+    ],
+    "min_stages" : 1,
+    "orbit_deltav" : null,
+    "launch_thrust" : 190
+  },
+  {
+    "name" : "Inertial Upper Stage 2",
+    "stages" : [
+      "IUS Stage 2"
+    ],
+    "min_stages" : 1,
+    "orbit_deltav" : null,
+    "launch_thrust" : 80
+  },
+  {
+    "name" : "Transtage",
+    "stages" : [
+      [12.247, 1.95, 311]
+    ],
+    "min_stages" : 1,
+    "orbit_deltav" : null,
+    "launch_thrust" : 36
+  },
+]
