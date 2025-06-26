@@ -1,0 +1,57 @@
+[
+  {
+    "name" : "Centaur G'",
+    "stages" : [
+      [22.8, 2.761, 446.4]
+    ],
+    "min_stages" : 1,
+    "orbit_deltav" : null,
+    "launch_thrust" : 146.8
+  },
+  {
+    "name" : "Centaur G",
+    "stages" : [
+      [16.928, 3.06, 440.4]
+    ],
+    "min_stages" : 1,
+    "orbit_deltav" : null,
+    "launch_thrust" : 133.4
+  },
+  {
+    "name" : "Inertial Upper Stage",
+    "stages" : [
+      "IUS Stage 1",
+      "IUS Stage 2"
+    ],
+    "min_stages" : 1,
+    "orbit_deltav" : null,
+    "launch_thrust" : 190
+  },
+  {
+    "name" : "Inertial Upper Stage 2",
+    "stages" : [
+      "IUS Stage 2"
+    ],
+    "min_stages" : 1,
+    "orbit_deltav" : null,
+    "launch_thrust" : 80
+  },
+  {
+    "name" : "Transtage",
+    "stages" : [
+      [12.247, 1.95, 311]
+    ],
+    "min_stages" : 1,
+    "orbit_deltav" : null,
+    "launch_thrust" : 36
+  },
+  {
+    "name" : "Star 48B L",
+    "stages" : [
+      [2.14, 0.13, 292.1]
+    ],
+    "min_stages" : 1,
+    "orbit_deltav" : null,
+    "launch_thrust" : 66.7
+  }
+]
