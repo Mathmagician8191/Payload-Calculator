@@ -93,11 +93,32 @@
     "launch_thrust" : 38035
   },
   {
+    "name" : "Saturn I",
+    "stages" : [
+      [432.68, 45.27, 272],
+      [50.58, 5.22, 410],
+      [15.6, 2, 425],
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : 9865,
+    "launch_thrust" : 7200
+  },
+  {
+    "name" : "Saturn IB",
+    "stages" : [
+      [441.4, 42, 272],
+      "S-IVB",
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : 8762,
+    "launch_thrust" : 7200
+  },
+  {
     "name" : "Saturn V",
     "stages" : [
       [2214, 137, 283],
       [496.2, 40.1, 421],
-      [123, 15.2, 421]
+      "S-IVB",
     ],
     "min_stages" : 2,
     "orbit_deltav" : 9285,

@@ -54,6 +54,12 @@
     "isp" : 300
   },
   {
+    "name" : "S-IVB",
+    "wet_mass" : 123,
+    "dry_mass" : 15.2,
+    "isp" : 421
+  },
+  {
     "name" : "Star 48B",
     "wet_mass" : 2.137,
     "dry_mass" : 0.126,
