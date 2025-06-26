@@ -1,0 +1,62 @@
+[
+  {
+    "name" : "Ariane 5 Booster x2",
+    "wet_mass" : 79.7,
+    "dry_mass" : 9.8,
+    "isp" : 260
+  },
+  {
+    "name" : "Ariane 5 Stage 2",
+    "wet_mass" : 11.3,
+    "dry_mass" : 2.8,
+    "isp" : 350
+  },
+  {
+    "name" : "Kerbal X Core",
+    "wet_mass" : 60.7,
+    "dry_mass" : 12.7,
+    "isp" : 310
+  },
+  {
+    "name" : "Kerbal X Extended Core",
+    "wet_mass" : 96.7,
+    "dry_mass" : 16.7,
+    "isp" : 310
+  },
+  {
+    "name" : "Kerbal X Skipper Core",
+    "wet_mass" : 57.7,
+    "dry_mass" : 9.7,
+    "isp" : 320
+  },
+  {
+    "name" : "Kerbal X Stage 2",
+    "wet_mass" : 10.75,
+    "dry_mass" : 2.75,
+    "isp" : 350
+  },
+  {
+    "name" : "Kerbal X Booster Pair #1",
+    "wet_mass" : 17.5,
+    "dry_mass" : 5.5,
+    "isp" : 312
+  },
+  {
+    "name" : "Kerbal X Booster Pair #2",
+    "wet_mass" : 17.5,
+    "dry_mass" : 5.5,
+    "isp" : 314
+  },
+  {
+    "name" : "Kerbal X Booster Pair #3",
+    "wet_mass" : 17.5,
+    "dry_mass" : 5.5,
+    "isp" : 315
+  },
+  {
+    "name" : "Kerbal X Skipper Booster x2",
+    "wet_mass" : 17.5,
+    "dry_mass" : 5.5,
+    "isp" : 320
+  }
+]
