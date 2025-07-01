@@ -22,6 +22,40 @@
     "launch_thrust" : 2566.7,
   },
   {
+    "name" : "Kerbal 1",
+    "stages" : [
+      [10.5, 1.6, 241],
+      [3.2, 2.5, 320],
+      "Kerbal 1 Stage 2",
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : null,
+    "launch_thrust" : 365.87,
+  },
+  {
+    "name" : "Kerbal 1 Delayed Core Stage",
+    "stages" : [
+      [7.2, 1.6, 195],
+      [6.5, 2.5, 320],
+      "Kerbal 1 Stage 2",
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : null,
+    "launch_thrust" : 395.79,
+  },
+  // Without the delay, the boosters burn out at the same time as the core stage
+  {
+    "name" : "Kerbal 1-5 Delayed Core Stage",
+    "stages" : [
+      [7.3, 1.7, 195],
+      [6, 2, 320],
+      "Kerbal 1-5 Stage 2",
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : null,
+    "launch_thrust" : 365.87,
+  },
+  {
     "name" : "Kerbal X",
     "stages" : [
       "Kerbal X Booster Pair #3",
@@ -125,5 +159,59 @@
     "min_stages" : 4,
     "orbit_deltav" : null,
     "launch_thrust" : 1576.52,
+  },
+  {
+    "name" : "AeroEquus",
+    "stages" : [
+      [14.5, 3.2, 195],
+      [8.6, 2.6, 320],
+      [2.8, 0.8, 345],
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : null,
+    "launch_thrust" : 544.8,
+  },
+  {
+    "name" : "Goliath II HDV",
+    "stages" : [
+      [17.5, 4, 310],
+      "Goliath II Stage 2",
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : null,
+    "launch_thrust" : 374.19,
+  },
+  {
+    "name" : "Goliath II HDV No fairing",
+    "stages" : [
+      [17.2, 3.7, 310],
+      "Goliath II Stage 2",
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : null,
+    "launch_thrust" : 374.19,
+  },
+  {
+    "name" : "PT Series Munsplorer",
+    "stages" : [
+      [20.7, 4.7, 313],
+      [10.5, 2.5, 320],
+      [2.79, 0.79, 345],
+      [2.1875, 0.6875, 345],
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : null,
+    "launch_thrust" : 578.29,
+  },
+  {
+    "name" : "Science Jr",
+    "stages" : [
+      [21.2, 3.1, 245],
+      [4.9, 2.7, 320],
+      [5, 1, 345],
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : null,
+    "launch_thrust" : 417.79,
   },
 ]

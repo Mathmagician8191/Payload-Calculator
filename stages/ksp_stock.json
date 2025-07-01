@@ -12,6 +12,18 @@
     "isp" : 350
   },
   {
+    "name" : "Kerbal 1 Stage 2",
+    "wet_mass" : 3.3125,
+    "dry_mass" : 0.8125,
+    "isp" : 345
+  },
+  {
+    "name" : "Kerbal 1-5 Stage 2",
+    "wet_mass" : 2.75,
+    "dry_mass" : 0.75,
+    "isp" : 345
+  },
+  {
     "name" : "Kerbal X Core",
     "wet_mass" : 60.7,
     "dry_mass" : 12.7,
@@ -58,5 +70,11 @@
     "wet_mass" : 17.5,
     "dry_mass" : 5.5,
     "isp" : 320
+  },
+  {
+    "name" : "Goliath II Stage 2",
+    "wet_mass" : 6.1,
+    "dry_mass" : 1.6,
+    "isp" : 355
   }
 ]
