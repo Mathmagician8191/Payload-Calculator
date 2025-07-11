@@ -3,78 +3,92 @@
     "name" : "Falcon Heavy Side Booster x2",
     "wet_mass" : 866.2,
     "dry_mass" : 44.4,
-    "isp" : 297
+    "isp" : 297,
+    "thrust" : 8226
   },
   {
     "name" : "Falcon Heavy Core",
     "wet_mass" : 433.1,
     "dry_mass" : 22.2,
-    "isp" : 311
+    "isp" : 311,
+    "thrust" : 8226
   },
   {
     "name" : "Falcon 9 Stage 1",
     "wet_mass" : 433.1,
     "dry_mass" : 22.2,
-    "isp" : 297
+    "isp" : 297,
+    "thrust" : 8226
   },
   {
     "name" : "Falcon 9 Stage 1 (ASDS)",
     "wet_mass" : 433.1,
     "dry_mass" : 69,
-    "isp" : 297
+    "isp" : 297,
+    "thrust" : 8226
   },
   {
     "name" : "Falcon 9 Stage 1 (RTLS)",
     "wet_mass" : 433.1,
     "dry_mass" : 124.6,
-    "isp" : 297
-  },
-  {
-    "name" : "Falcon 9 Booster",
-    "wet_mass" : 433.1,
-    "dry_mass" : 22.2,
-    "isp" : 297
+    "isp" : 297,
+    "thrust" : 8226
   },
   {
     "name" : "Falcon 9 Stage 2",
     "wet_mass" : 111.5,
     "dry_mass" : 4,
-    "isp" : 348
+    "isp" : 348,
+    "thrust" : 981
   },
   {
     "name" : "Falcon 9 Stage 2SL",
     "wet_mass" : 111.44,
     "dry_mass" : 3.94,
-    "isp" : 311
+    "isp" : 311,
+    "thrust" : 914
   },
   {
     "name" : "Dragon 2",
     "wet_mass" : 9.099,
     "dry_mass" : 7.711,
-    "isp" : 300
+    "isp" : 300,
+    // Superdracos, calculated assuming identical mass flow rate compared to sea level
+    "thrust" : 725
   },
   {
     "name" : "S-IVB",
     "wet_mass" : 123,
     "dry_mass" : 15.2,
-    "isp" : 421
+    "isp" : 421,
+    "thrust" : 1033.1
   },
   {
-    "name" : "Star 48B",
-    "wet_mass" : 2.137,
-    "dry_mass" : 0.126,
-    "isp" : 286
+    "name" : "Star 48B S",
+    "wet_mass" : 2.134,
+    "dry_mass" : 0.124,
+    "isp" : 286,
+    "thrust" : 66.7
+  },
+  {
+    "name" : "Star 48B L",
+    "wet_mass" : 2.14,
+    "dry_mass" : 0.13,
+    "isp" : 292.1,
+    "thrust" : 66.7
   },
   {
     "name" : "IUS Stage 1",
     "wet_mass" : 10.4,
     "dry_mass" : 0.7,
-    "isp" : 295.5
+    "isp" : 295.5,
+    "thrust" : 190
   },
   {
     "name" : "IUS Stage 2",
     "wet_mass" : 3,
     "dry_mass" : 0.3,
-    "isp" : 289.1
+    "isp" : 289.1,
+    "thrust" : 80
   }
 ]

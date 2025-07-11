@@ -24,7 +24,10 @@ include_orbit = True
 
 required_margin = 0
 
-min_twr = 1.1
+min_launch_twr = 1.1
+min_twr = 0.25
+
+min_accel = min_twr * DEFAULT[GRAVITY]
 
 alternate_sort = False
 
@@ -50,9 +53,9 @@ for launcher in launchers:
       # binary search for maximum payload capacity
       while True:
         test_payload = increment_count * payload_increment
-        margin, wet_mass = delta_v(test_payload, sub_stages, launcher_deltav)
+        margin, wet_mass = delta_v(test_payload, sub_stages, launcher_deltav, min_accel)
         twr = thrust / wet_mass / DEFAULT[GRAVITY]
-        if margin < required_margin or twr < min_twr:
+        if margin is None or margin < required_margin or twr < min_launch_twr:
           increment_count = (increment_count + working_increments) // 2
           if working_increments == increment_count:
             break
@@ -65,10 +68,10 @@ for launcher in launchers:
         variant_name = f"{name} ({stage_count} stages)" if stage_count_required else name
         solutions.append((wet_mass / working_payload, variant_name, working_payload, twr))
     else:
-      margin, wet_mass = delta_v(payload, sub_stages, launcher_deltav)
-      if margin >= required_margin:
+      margin, wet_mass = delta_v(payload, sub_stages, launcher_deltav, min_accel)
+      if margin is not None and margin >= required_margin:
         twr = thrust / wet_mass / DEFAULT[GRAVITY]
-        if twr >= min_twr:
+        if twr >= min_launch_twr:
           variant_name = f"{name} ({stage_count} stages)" if stage_count_required else name
           solutions.append((wet_mass, variant_name, margin, twr))
 

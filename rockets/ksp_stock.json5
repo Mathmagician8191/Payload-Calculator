@@ -3,7 +3,7 @@
     "name" : "Ariane 5",
     "stages" : [
       "Ariane 5 Booster x2",
-      [29.4, 12.4, 310],
+      [29.4, 12.4, 310, 1500],
       "Ariane 5 Stage 2",
     ],
     "min_stages" : 2,
@@ -14,7 +14,7 @@
     "name" : "Ariane 5 Extended",
     "stages" : [
       "Ariane 5 Booster x2",
-      [65.4, 16.4, 310],
+      [65.4, 16.4, 310, 1500],
       "Ariane 5 Stage 2",
     ],
     "min_stages" : 2,
@@ -24,8 +24,8 @@
   {
     "name" : "Kerbal 1",
     "stages" : [
-      [10.5, 1.6, 241],
-      [3.2, 2.5, 320],
+      [10.5, 1.6, 241, 442],
+      [3.2, 2.5, 320, 215],
       "Kerbal 1 Stage 2",
     ],
     "min_stages" : 2,
@@ -35,8 +35,8 @@
   {
     "name" : "Kerbal 1 Delayed Core Stage",
     "stages" : [
-      [7.2, 1.6, 195],
-      [6.5, 2.5, 320],
+      [7.2, 1.6, 195, 454],
+      [6.5, 2.5, 320, 215],
       "Kerbal 1 Stage 2",
     ],
     "min_stages" : 2,
@@ -47,13 +47,13 @@
   {
     "name" : "Kerbal 1-5 Delayed Core Stage",
     "stages" : [
-      [7.3, 1.7, 195],
-      [6, 2, 320],
+      [7.3, 1.7, 195, 454],
+      [6, 2, 320, 215],
       "Kerbal 1-5 Stage 2",
     ],
     "min_stages" : 2,
     "orbit_deltav" : null,
-    "launch_thrust" : 365.87,
+    "launch_thrust" : 395.79,
   },
   {
     "name" : "Kerbal X",
@@ -163,9 +163,9 @@
   {
     "name" : "AeroEquus",
     "stages" : [
-      [14.5, 3.2, 195],
-      [8.6, 2.6, 320],
-      [2.8, 0.8, 345],
+      [14.5, 3.2, 195, 908],
+      [8.6, 2.6, 320, 215],
+      [2.8, 0.8, 345, 60],
     ],
     "min_stages" : 2,
     "orbit_deltav" : null,
@@ -174,7 +174,7 @@
   {
     "name" : "Goliath II HDV",
     "stages" : [
-      [17.5, 4, 310],
+      [17.5, 4, 310, 400],
       "Goliath II Stage 2",
     ],
     "min_stages" : 2,
@@ -184,7 +184,7 @@
   {
     "name" : "Goliath II HDV No fairing",
     "stages" : [
-      [17.2, 3.7, 310],
+      [17.2, 3.7, 310, 400],
       "Goliath II Stage 2",
     ],
     "min_stages" : 2,
@@ -194,10 +194,10 @@
   {
     "name" : "PT Series Munsplorer",
     "stages" : [
-      [20.7, 4.7, 313],
-      [10.5, 2.5, 320],
-      [2.79, 0.79, 345],
-      [2.1875, 0.6875, 345],
+      [20.7, 4.7, 313, 695],
+      [10.5, 2.5, 320, 215],
+      [2.79, 0.79, 345, 60],
+      [2.1875, 0.6875, 345, 60],
     ],
     "min_stages" : 2,
     "orbit_deltav" : null,
@@ -206,9 +206,9 @@
   {
     "name" : "Science Jr",
     "stages" : [
-      [21.2, 3.1, 245],
-      [4.9, 2.7, 320],
-      [5, 1, 345],
+      [21.2, 3.1, 245, 707],
+      [4.9, 2.7, 320, 215],
+      [5, 1, 345, 60],
     ],
     "min_stages" : 2,
     "orbit_deltav" : null,

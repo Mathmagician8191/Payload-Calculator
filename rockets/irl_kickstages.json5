@@ -2,7 +2,7 @@
   {
     "name" : "Centaur G'",
     "stages" : [
-      [22.8, 2.761, 446.4]
+      [22.8, 2.761, 446.4, 146.8]
     ],
     "min_stages" : 1,
     "orbit_deltav" : null,
@@ -11,7 +11,7 @@
   {
     "name" : "Centaur G",
     "stages" : [
-      [16.928, 3.06, 440.4]
+      [16.928, 3.06, 440.4, 133.4]
     ],
     "min_stages" : 1,
     "orbit_deltav" : null,
@@ -39,7 +39,7 @@
   {
     "name" : "Transtage",
     "stages" : [
-      [12.247, 1.95, 311]
+      [12.247, 1.95, 311, 36]
     ],
     "min_stages" : 1,
     "orbit_deltav" : null,
@@ -48,7 +48,7 @@
   {
     "name" : "Star 48B L",
     "stages" : [
-      [2.14, 0.13, 292.1]
+      "Star 48B L"
     ],
     "min_stages" : 1,
     "orbit_deltav" : null,

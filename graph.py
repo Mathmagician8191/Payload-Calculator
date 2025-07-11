@@ -10,7 +10,10 @@ payload_stages = []
 
 include_orbit = True
 
-min_twr = 1.1
+min_launch_twr = 1.1
+min_twr = 0.25
+
+min_accel = min_twr * DEFAULT[GRAVITY]
 
 min_payload = 0
 
@@ -44,9 +47,9 @@ for name, stage_counts in selected_launchers:
         performance = []
         payload = min_payload
         while True:
-          launch_performance, wet_mass = delta_v(payload, sub_stages, orbit_deltav)
+          launch_performance, wet_mass = delta_v(payload, sub_stages, orbit_deltav, min_accel)
           twr = thrust / wet_mass / DEFAULT[GRAVITY]
-          if twr >= min_twr:
+          if twr >= min_launch_twr and launch_performance is not None:
             if plot_c3 is not None:
               planet, altitude = plot_c3
               velocity = circular(altitude, planet=planet) + launch_performance

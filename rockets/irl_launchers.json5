@@ -95,9 +95,9 @@
   {
     "name" : "Saturn I",
     "stages" : [
-      [432.68, 45.27, 272],
-      [50.58, 5.22, 410],
-      [15.6, 2, 425],
+      [432.68, 45.27, 272, 7582.1],
+      [50.58, 5.22, 410, 400],
+      [15.6, 2, 425, 133.45],
     ],
     "min_stages" : 2,
     "orbit_deltav" : 9865,
@@ -106,7 +106,7 @@
   {
     "name" : "Saturn IB",
     "stages" : [
-      [441.4, 42, 272],
+      [441.4, 42, 272, 8160],
       "S-IVB",
     ],
     "min_stages" : 2,
@@ -116,8 +116,9 @@
   {
     "name" : "Saturn V",
     "stages" : [
-      [2214, 137, 283],
-      [496.2, 40.1, 421],
+      [2214, 137, 283, 38850],
+      // Taken by multiplying J-2 thrust by 5 - wikipedia says 4400 instead
+      [496.2, 40.1, 421, 5165],
       "S-IVB",
     ],
     "min_stages" : 2,
@@ -127,20 +128,21 @@
   {
     "name" : "Proton M",
     "stages" : [
-      [428.3, 30.6, 302],
-      [157.3, 11, 327],
-      [46.562, 3.5, 325],
-      [19.8, 2.37, 326]
+      // Taken by multiplying RD-253 thrust by 6 - wikipedia says 10532
+      [428.3, 30.6, 302, 9780],
+      [157.3, 11, 327, 2399],
+      [46.562, 3.5, 325, 613.8],
+      [19.8, 2.37, 326, 19.62]
     ],
     "min_stages" : 3,
     "orbit_deltav" : 9165,
-    "launch_thrust" : 10532
+    "launch_thrust" : 8820
   },
   {
     "name" : "Zenit 2",
     "stages" : [
-      [354.35, 27.564, 324],
-      [90.047, 8.307, 350]
+      [354.35, 27.564, 324, 7887],
+      [90.047, 8.307, 350, 833]
     ],
     "min_stages" : 2,
     // Calibrated off LEO data
@@ -150,8 +152,9 @@
   {
     "name" : "Electron Block 1",
     "stages" : [
-      [9.25, 0.95, 303],
-      [2.15, 0.25, 333]
+      // Block 1 vacuum thrust unknown, taking wikipedia-sourced sea level value
+      [9.25, 0.95, 303, 162],
+      [2.15, 0.25, 333, 25.8]
     ],
     "min_stages" : 2,
     "orbit_deltav" : 8978,
@@ -161,11 +164,11 @@
   {
     "name" : "Electron Block 2",
     "stages" : [
-      [9.25, 0.95, 311],
-      [2.15, 0.25, 343]
+      [9.25, 0.95, 311, 224],
+      [2.15, 0.25, 343, 25.8]
     ],
     "min_stages" : 2,
     "orbit_deltav" : 8978,
-    "launch_thrust" : 162
+    "launch_thrust" : 190
   },
 ]

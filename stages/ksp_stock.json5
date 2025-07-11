@@ -3,78 +3,92 @@
     "name" : "Ariane 5 Booster x2",
     "wet_mass" : 79.7,
     "dry_mass" : 9.8,
-    "isp" : 260
+    "isp" : 260,
+    "thrust" : 2840
   },
   {
     "name" : "Ariane 5 Stage 2",
     "wet_mass" : 11.3,
     "dry_mass" : 2.8,
-    "isp" : 350
+    "isp" : 350,
+    "thrust" : 250
   },
   {
     "name" : "Kerbal 1 Stage 2",
     "wet_mass" : 3.3125,
     "dry_mass" : 0.8125,
-    "isp" : 345
+    "isp" : 345,
+    "thrust" : 60
   },
   {
     "name" : "Kerbal 1-5 Stage 2",
     "wet_mass" : 2.75,
     "dry_mass" : 0.75,
-    "isp" : 345
+    "isp" : 345,
+    "thrust" : 60
   },
   {
     "name" : "Kerbal X Core",
     "wet_mass" : 60.7,
     "dry_mass" : 12.7,
-    "isp" : 310
+    "isp" : 310,
+    "thrust" : 1500
   },
   {
     "name" : "Kerbal X Extended Core",
     "wet_mass" : 96.7,
     "dry_mass" : 16.7,
-    "isp" : 310
+    "isp" : 310,
+    "thrust" : 1500
   },
   {
     "name" : "Kerbal X Skipper Core",
     "wet_mass" : 57.7,
     "dry_mass" : 9.7,
-    "isp" : 320
+    "isp" : 320,
+    "thrust" : 650
   },
   {
     "name" : "Kerbal X Stage 2",
     "wet_mass" : 10.75,
     "dry_mass" : 2.75,
-    "isp" : 350
+    "isp" : 350,
+    "thrust" : 250
   },
   {
     "name" : "Kerbal X Booster Pair #1",
     "wet_mass" : 17.5,
     "dry_mass" : 5.5,
-    "isp" : 312
+    "isp" : 312,
+    "thrust" : 1930
   },
   {
     "name" : "Kerbal X Booster Pair #2",
     "wet_mass" : 17.5,
     "dry_mass" : 5.5,
-    "isp" : 314
+    "isp" : 314,
+    "thrust" : 2360
   },
   {
     "name" : "Kerbal X Booster Pair #3",
     "wet_mass" : 17.5,
     "dry_mass" : 5.5,
-    "isp" : 315
+    "isp" : 315,
+    "thrust" : 2790
   },
   {
     "name" : "Kerbal X Skipper Booster x2",
     "wet_mass" : 17.5,
     "dry_mass" : 5.5,
-    "isp" : 320
+    "isp" : 320,
+    // Assumes all 3 booster pairs present
+    "thrust" : 1940
   },
   {
     "name" : "Goliath II Stage 2",
     "wet_mass" : 6.1,
     "dry_mass" : 1.6,
-    "isp" : 355
+    "isp" : 355,
+    "thrust" : 125
   }
 ]
