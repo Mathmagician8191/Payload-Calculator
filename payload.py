@@ -65,6 +65,7 @@ for launcher in launchers:
       working_payload = working_increments * payload_increment
       _, wet_mass = delta_v(working_payload, sub_stages, launcher_deltav)
       if working_payload > 0:
+        twr = thrust / wet_mass / DEFAULT[GRAVITY]
         variant_name = f"{name} ({stage_count} stages)" if stage_count_required else name
         solutions.append((wet_mass / working_payload, variant_name, working_payload, twr))
     else:
