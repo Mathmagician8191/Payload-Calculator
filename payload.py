@@ -38,22 +38,19 @@ print(f"{required_deltav:.1f} m/s required after orbit")
 solutions = []
 
 for launcher in launchers:
-  min_stages = launcher["min_stages"]
-  stages = launcher["stages"]
-  stage_count_required = len(stages) != min_stages
   orbit_deltav = (launcher["orbit_deltav"] or ORBIT_ESTIMATE) if include_orbit else 0
   launcher_deltav = orbit_deltav + required_deltav
-  name = launcher["name"]
-  thrust = launcher["launch_thrust"]
-  for stage_count in range(min_stages, len(stages) + 1):
-    sub_stages = stages[:stage_count] + payload_stages
+  for configuration in configuations(launcher):
+    stages = configuration["stages"] + payload_stages
+    name = configuration["name"]
+    thrust = configuration["launch_thrust"]
     if payload is None:
       increment_count = 1
       working_increments = 0
       # binary search for maximum payload capacity
       while True:
         test_payload = increment_count * payload_increment
-        margin, wet_mass = delta_v(test_payload, sub_stages, launcher_deltav, min_accel)
+        margin, wet_mass = delta_v(test_payload, stages, launcher_deltav, min_accel)
         twr = thrust / wet_mass / DEFAULT[GRAVITY]
         if margin is None or margin < required_margin or twr < min_launch_twr:
           increment_count = (increment_count + working_increments) // 2
@@ -63,18 +60,16 @@ for launcher in launchers:
           working_increments = increment_count
           increment_count *= 2
       working_payload = working_increments * payload_increment
-      _, wet_mass = delta_v(working_payload, sub_stages, launcher_deltav)
+      _, wet_mass = delta_v(working_payload, stages, launcher_deltav)
       if working_payload > 0:
         twr = thrust / wet_mass / DEFAULT[GRAVITY]
-        variant_name = f"{name} ({stage_count} stages)" if stage_count_required else name
-        solutions.append((wet_mass / working_payload, variant_name, working_payload, twr))
+        solutions.append((wet_mass / working_payload, name, working_payload, twr))
     else:
-      margin, wet_mass = delta_v(payload, sub_stages, launcher_deltav, min_accel)
+      margin, wet_mass = delta_v(payload, stages, launcher_deltav, min_accel)
       if margin is not None and margin >= required_margin:
         twr = thrust / wet_mass / DEFAULT[GRAVITY]
         if twr >= min_launch_twr:
-          variant_name = f"{name} ({stage_count} stages)" if stage_count_required else name
-          solutions.append((wet_mass, variant_name, margin, twr))
+          solutions.append((wet_mass, name, margin, twr))
 
 print_solution = print_payload if payload is None else print_margin
 
