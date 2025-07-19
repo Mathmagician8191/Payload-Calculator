@@ -214,4 +214,121 @@
     "orbit_deltav" : null,
     "launch_thrust" : 417.79,
   },
+  {
+    "name" : "Acapello",
+    "stages" : [
+      [513.3, 84.4, 305, 6750],
+      [11.4, 3.9, 330, 300],
+    ],
+    "min_stages" : 1,
+    "orbit_deltav" : null,
+    "launch_thrust" : 6418,
+  },
+  {
+    "name" : "Acapello fully fueled",
+    "stages" : [
+      [544.6, 84.4, 305, 6750],
+      [16.4, 3.9, 330, 300],
+    ],
+    "min_stages" : 1,
+    "orbit_deltav" : null,
+    "launch_thrust" : 6418,
+  },
+  {
+    "name" : "Beta Centaurus",
+    "stages" : [
+      [26, 5, 310, 400],
+      [4.3, 1.9, 355, 125],
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : null,
+    "launch_thrust" : 374.19,
+  },
+  {
+    "name" : "GDLV3",
+    "stages" : [
+      [45.6, 6.4, 251, 1370],
+      [25.5, 8.1, 320, 650],
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : null,
+    "launch_thrust" : 1168.7,
+  },
+  {
+    "name" : "GDLV3 Delayed Core Stage",
+    "stages" : [
+      [31, 6.4, 210, 1200],
+      [40.1, 8.1, 320, 650],
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : null,
+    "launch_thrust" : 1000,
+  },
+  {
+    "name" : "Muna 1",
+    "stages" : [
+      [54.9, 14.5, 303, 1940],
+      [11.9, 4.4, 303, 388],
+      [7.4, 2.9, 303, 388],
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : null,
+    "launch_thrust" : 1813,
+  },
+  {
+    "name" : "Muna 1 Asparagus",
+    "stages" : [
+      [46.9, 14.1, 303, 1940],
+      [20.1, 4.4, 303, 388],
+      [7.4, 2.9, 303, 388],
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : null,
+    "launch_thrust" : 1813,
+  },
+  {
+    "name" : "Sally-Hut 1",
+    "stages" : [
+      [32.5, 8.5, 314, 1610],
+      [30.5, 6.5, 320, 650],
+      [10.8, 2.8, 350, 250],
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : null,
+    "launch_thrust" : 1389.4,
+  },
+  {
+    "name" : "Sally-Hut 1 Better Asparagus",
+    "stages" : [
+      [16.2, 4.2, 314, 1610],
+      [16.3, 4.3, 316, 1130],
+      [30.5, 6.5, 320, 650],
+      [10.8, 2.8, 350, 250],
+    ],
+    "min_stages" : 3,
+    "orbit_deltav" : null,
+    "launch_thrust" : 1389.4,
+  },
+  {
+    "name" : "Z-MAP Satellite Launch Kit",
+    "stages" : [
+      [10.5, 1.6, 241, 442],
+      [8.2, 3.4, 320, 215],
+      [1.8, 0.7, 345, 60],
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : null,
+    "launch_thrust" : 365.87,
+  },
+  {
+    "name" : "Z-MAP Satellite Launch Kit Delayed Core Stage",
+    "stages" : [
+      [7.3, 1.6, 195, 454],
+      [11.4, 3.4, 320, 215],
+      [1.8, 0.7, 345, 60],
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : null,
+    "launch_thrust" : 395.79,
+  },
 ]
