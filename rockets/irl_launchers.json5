@@ -171,4 +171,16 @@
     "orbit_deltav" : 8978,
     "launch_thrust" : 190
   },
+  {
+    "name" : "Space Shuttle",
+    "stages" : [
+      [760, 26.5, 409.15, 6837],
+      [88.83, 78, 316, 53.4]
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : 9026,
+    "launch_thrust" : 5580,
+    "boosters" : ["4-segment SRB","5-segment SRB"],
+    "booster_counts" : [2],
+  },
 ]
