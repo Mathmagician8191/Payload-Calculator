@@ -41,9 +41,10 @@ for launcher in launchers:
   orbit_deltav = (launcher["orbit_deltav"] or ORBIT_ESTIMATE) if include_orbit else 0
   launcher_deltav = orbit_deltav + required_deltav
   for configuration in configuations(launcher):
-    stages = configuration["stages"] + payload_stages
-    name = configuration["name"]
-    thrust = configuration["launch_thrust"]
+    data = configuration_data(configuration)
+    stages = data["stages"] + payload_stages
+    name = data["name"]
+    thrust = data["launch_thrust"]
     if payload is None:
       increment_count = 1
       working_increments = 0

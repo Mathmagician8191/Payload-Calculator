@@ -31,23 +31,21 @@ payload_increment = 0.01
 
 fig, ax = plt.subplots()
 
-for name, stage_counts in selected_launchers:
+for name, stage_counts, *extras in selected_launchers:
   for launcher in launchers:
     if launcher["name"] == name:
-      min_stages = launcher["min_stages"]
-      stages = launcher["stages"]
-      stage_count_required = len(stages) != min_stages
       orbit_deltav = (launcher["orbit_deltav"] or ORBIT_ESTIMATE) if include_orbit else 0
-      thrust = launcher["launch_thrust"]
       if not hasattr(stage_counts, "__iter__"):
         stage_counts = (stage_counts,)
       for stage_count in stage_counts:
-        variant_name = f"{name} ({stage_count} stages)" if stage_count_required else name
-        sub_stages = stages[:stage_count] + payload_stages
+        data = configuration_data([launcher, stage_count] + extras)
+        stages = data["stages"] + payload_stages
+        name = data["name"]
+        thrust = data["launch_thrust"]
         performance = []
         payload = min_payload
         while True:
-          launch_performance, wet_mass = delta_v(payload, sub_stages, orbit_deltav, min_accel)
+          launch_performance, wet_mass = delta_v(payload, stages, orbit_deltav, min_accel)
           twr = thrust / wet_mass / DEFAULT[GRAVITY]
           if twr >= min_launch_twr and launch_performance is not None:
             if plot_c3 is not None:
@@ -62,7 +60,7 @@ for name, stage_counts in selected_launchers:
           else: break
         if len(performance) > 0:
           x, y = zip(*performance)
-          ax.plot(x, y, label=variant_name)
+          ax.plot(x, y, label=name)
       break
   else:
     print(f"Could not find {name}")

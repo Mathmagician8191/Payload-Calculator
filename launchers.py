@@ -31,49 +31,69 @@ def configuations(launcher):
   min_stages = launcher["min_stages"]
   stages = launcher["stages"]
   name = launcher["name"]
+  launch_thrust = launcher["launch_thrust"]
   stage_count_required = len(stages) != min_stages
   results = []
-  launch_thrust = launcher["launch_thrust"]
   for stage_count in range(min_stages, len(stages) + 1):
     sub_stages = stages[:stage_count]
     variant_name = f"{name} ({stage_count} stages)" if stage_count_required else name
-    results.append({
-      "name" : variant_name,
-      "stages" : sub_stages,
-      "launch_thrust" : launch_thrust,
-    })
+    results.append([launcher, stage_count, None, 0])
     if "boosters" in launcher:
       _, _, isp, thrust = get_stage(sub_stages[0])
       mass_flow = thrust / isp
       #core_stage, *others = sub_stages
       for booster in launcher["boosters"]:
-        booster_details = stage_library[booster]
-        is_asparagus = "asparagus" in booster_details and booster_details["asparagus"]
-        wet_mass = booster_details["wet_mass"]
-        dry_mass = booster_details["dry_mass"]
-        booster_isp = booster_details["isp"]
-        booster_thrust = booster_details["thrust"]
-        booster_launch_thrust = booster_details["launch_thrust"]
-        booster_mass_flow = booster_thrust / booster_isp
-        if is_asparagus:
-          for count in launcher["booster_counts"]:
-            group_size = lcf(count)
-            group_count = count // group_size
-            new_stages = []
-            total_thrust = thrust
-            total_mass_flow = mass_flow
-            for x in range(group_count):
-              total_thrust += booster_thrust * group_size
-              total_mass_flow += booster_mass_flow * group_size
-              total_isp = total_thrust / total_mass_flow
-              new_stages.append([wet_mass * group_size, dry_mass * group_size, total_isp, total_thrust])
-            new_stages.reverse()
-            results.append({
-              "name" : f"{variant_name} ({count}x {booster})",
-              "stages" : new_stages + sub_stages,
-              "launch_thrust" : launch_thrust + booster_launch_thrust * count,
-            })
-        else:
-          print("Asparagus only for now")
-          quit()
+        for count in launcher["booster_counts"]:
+          results.append([launcher, stage_count, booster, count])
   return results
+
+def configuration_data(configuration):
+  if len(configuration) == 4:
+    launcher, stage_count, booster, count = configuration
+  elif len(configuration) == 2:
+    launcher, stage_count = configuration
+    booster, count = None, 0
+  else:
+    print("Unsupported format for rocket configuration")
+    quit()
+  min_stages = launcher["min_stages"]
+  stages = launcher["stages"]
+  name = launcher["name"]
+  launch_thrust = launcher["launch_thrust"]
+  stage_count_required = len(stages) != min_stages
+  stages = stages[:stage_count]
+  variant_name = f"{name} ({stage_count} stages)" if stage_count_required else name
+  if booster is not None:
+    _, _, isp, thrust = get_stage(stages[0])
+    mass_flow = thrust / isp
+    booster_details = stage_library[booster]
+    is_asparagus = "asparagus" in booster_details and booster_details["asparagus"]
+    wet_mass = booster_details["wet_mass"]
+    dry_mass = booster_details["dry_mass"]
+    booster_isp = booster_details["isp"]
+    booster_thrust = booster_details["thrust"]
+    booster_launch_thrust = booster_details["launch_thrust"]
+    booster_mass_flow = booster_thrust / booster_isp
+    if is_asparagus:
+      group_size = lcf(count)
+      group_count = count // group_size
+      new_stages = []
+      total_thrust = thrust
+      total_mass_flow = mass_flow
+      for x in range(group_count):
+        total_thrust += booster_thrust * group_size
+        total_mass_flow += booster_mass_flow * group_size
+        total_isp = total_thrust / total_mass_flow
+        new_stages.append([wet_mass * group_size, dry_mass * group_size, total_isp, total_thrust])
+      new_stages.reverse()
+      variant_name = f"{variant_name} ({count}x {booster})"
+      stages = new_stages + stages
+      launch_thrust = launch_thrust + booster_launch_thrust * count
+    else:
+      print("Asparagus only for now")
+      quit()
+  return {
+    "name" : variant_name,
+    "stages" : stages,
+    "launch_thrust" : launch_thrust,
+  }
