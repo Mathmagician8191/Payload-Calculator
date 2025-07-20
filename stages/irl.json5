@@ -68,6 +68,13 @@
     asparagus : false
   },
   {
+    name : "SLS Core Stage",
+    wet_mass : 1084.94,
+    dry_mass : 97.94,
+    isp : 409.15,
+    thrust : 9116,
+  },
+  {
     name : "Dragon 2",
     wet_mass : 9.099,
     dry_mass : 7.711,

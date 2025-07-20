@@ -183,4 +183,41 @@
     "boosters" : ["4-segment SRB","5-segment SRB"],
     "booster_counts" : [2],
   },
+  {
+    "name" : "Space Shuttle Lifting ET",
+    "stages" : [
+      [733.5, 0, 409.15, 6837],
+      [115.33, 104.5, 316, 53.4]
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : 9026,
+    "launch_thrust" : 5580,
+    "boosters" : ["4-segment SRB","5-segment SRB"],
+    "booster_counts" : [2],
+  },
+  {
+    "name" : "SLS Block 1",
+    "stages" : [
+      "SLS Core Stage",
+      [32.75, 3.8, 465.5, 110.1]
+    ],
+    "min_stages" : 1,
+    "orbit_deltav" : 9375,
+    "launch_thrust" : 7440,
+    "boosters" : ["4-segment SRB","5-segment SRB"],
+    "booster_counts" : [2],
+  },
+  {
+    "name" : "SLS Block 1B",
+    "stages" : [
+      "SLS Core Stage",
+      [143.11, 14.11, 460.1, 433.1]
+    ],
+    "min_stages" : 2,
+    // Calibrated off TLI Payload
+    "orbit_deltav" : 9698,
+    "launch_thrust" : 7440,
+    "boosters" : ["4-segment SRB","5-segment SRB"],
+    "booster_counts" : [2],
+  },
 ]
