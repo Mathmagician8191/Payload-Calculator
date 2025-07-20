@@ -72,8 +72,10 @@ def configuration_data(configuration):
     dry_mass = booster_details["dry_mass"]
     booster_isp = booster_details["isp"]
     booster_thrust = booster_details["thrust"]
-    booster_launch_thrust = booster_details["launch_thrust"]
     booster_mass_flow = booster_thrust / booster_isp
+    booster_launch_thrust = booster_details["launch_thrust"]
+    launch_thrust = launch_thrust + booster_launch_thrust * count
+    variant_name += f" ({count}x {booster})"
     if is_asparagus:
       group_size = lcf(count)
       group_count = count // group_size
@@ -86,12 +88,20 @@ def configuration_data(configuration):
         total_isp = total_thrust / total_mass_flow
         new_stages.append([wet_mass * group_size, dry_mass * group_size, total_isp, total_thrust])
       new_stages.reverse()
-      variant_name = f"{variant_name} ({count}x {booster})"
       stages = new_stages + stages
-      launch_thrust = launch_thrust + booster_launch_thrust * count
     else:
-      print("Asparagus only for now")
-      quit()
+      core_stage, *others = stages
+      total_thrust = thrust + booster_thrust * count
+      total_mass_flow = mass_flow + booster_mass_flow * count
+      total_isp = total_thrust / total_mass_flow
+      core_mass_flow = (wet_mass - dry_mass) * mass_flow / booster_mass_flow
+      core_wet, core_dry, core_isp, core_thrust = get_stage(core_stage)
+      core_wet -= core_mass_flow
+      first_stages = [
+        (core_mass_flow + wet_mass * count, dry_mass * count, total_isp, total_thrust),
+        (core_wet, core_dry, core_isp, core_thrust),
+      ]
+      stages = first_stages + others
   return {
     "name" : variant_name,
     "stages" : stages,
