@@ -121,6 +121,28 @@
     asparagus : false
   },
   {
+    name : "8S810K",
+    wet_mass : 428.3,
+    dry_mass : 30.6,
+    isp : 302,
+    // Taken by multiplying RD-253 thrust by 6 - wikipedia says 10532
+    thrust : 9780,
+  },
+  {
+    name : "8S811K",
+    wet_mass : 157.3,
+    dry_mass : 11,
+    isp : 327,
+    thrust : 2399,
+  },
+  {
+    name : "8S812",
+    wet_mass : 46.562,
+    dry_mass : 3.5,
+    isp : 325,
+    thrust : 613.8,
+  },
+  {
     name : "Dragon 2",
     wet_mass : 9.099,
     dry_mass : 7.711,

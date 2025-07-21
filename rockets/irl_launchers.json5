@@ -127,15 +127,26 @@
     "launch_thrust" : 34500
   },
   {
-    "name" : "Proton M",
+    "name" : "Proton M (Briz-M)",
     "stages" : [
-      // Taken by multiplying RD-253 thrust by 6 - wikipedia says 10532
-      [428.3, 30.6, 302, 9780],
-      [157.3, 11, 327, 2399],
-      [46.562, 3.5, 325, 613.8],
+      "8S810K",
+      "8S811K",
+      "8S812",
       [19.8, 2.37, 326, 19.62]
     ],
     "min_stages" : 3,
+    "orbit_deltav" : 9165,
+    "launch_thrust" : 8820
+  },
+  {
+    "name" : "Proton M (Blok DM-2)",
+    "stages" : [
+      "8S810K",
+      "8S811K",
+      "8S812",
+      [17.36, 2.14, 363.5, 83.61]
+    ],
+    "min_stages" : 4,
     "orbit_deltav" : 9165,
     "launch_thrust" : 8820
   },
@@ -203,7 +214,8 @@
       [32.75, 3.8, 465.5, 110.1]
     ],
     "min_stages" : 1,
-    "orbit_deltav" : 9375,
+    // Calibrated for TLI - 9375 for LEO
+    "orbit_deltav" : 9342,
     "launch_thrust" : 7440,
     "boosters" : ["4-segment SRB","5-segment SRB"],
     "booster_counts" : [2],
@@ -230,7 +242,8 @@
       [6.24, .945, 327, 19.61],
     ],
     "min_stages" : 1,
-    "orbit_deltav" : 9424,
+    // TLI calibration - 9424 for LEO
+    "orbit_deltav" : 9385,
     "launch_thrust" : 792.5,
     "boosters" : ["Soyuz Booster"],
     "booster_counts" : [2, 4],
@@ -249,7 +262,7 @@
     "booster_counts" : [2],
   },
   {
-    "name" : "Atlas 5 4*1",
+    "name" : "Atlas V",
     "stages" : [
       "Common Core Booster",
       [20.83, 2.32, 450.5, 99.2],
