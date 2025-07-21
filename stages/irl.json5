@@ -75,6 +75,52 @@
     thrust : 9116,
   },
   {
+    name : "Soyuz Booster",
+    wet_mass : 44.42,
+    dry_mass : 3.78,
+    isp : 290.5,
+    thrust : 1021.3,
+    launch_thrust : 838.5,
+    asparagus : false
+  },
+  {
+    name : "EAP P241",
+    wet_mass : 278.33,
+    dry_mass : 38.2,
+    isp : 262.5,
+    thrust : 7080,
+    launch_thrust : 6470,
+    asparagus : false
+  },
+  {
+    name : "Common Core Booster",
+    wet_mass : 284.09,
+    dry_mass : 21.05,
+    // Using vacuum Isp instead of the average of sea level and vacuum
+    isp : 337.8,
+    thrust : 4152,
+  },
+  {
+    name : "GEM 63",
+    wet_mass : 49.3,
+    dry_mass : 5.1,
+    // Vacuum value - cannot find sea level value to average with
+    isp : 279,
+    thrust : 1663,
+    launch_thrust : 1663,
+    asparagus : false
+  },
+  {
+    name : "GEM 63XL",
+    wet_mass : 53.4,
+    dry_mass : 5.4,
+    // Vacuum value - cannot find sea level value to average with
+    isp : 280,
+    thrust : 2026,
+    launch_thrust : 2026,
+    asparagus : false
+  },
+  {
     name : "Dragon 2",
     wet_mass : 9.099,
     dry_mass : 7.711,
