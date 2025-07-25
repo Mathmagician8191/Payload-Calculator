@@ -1,7 +1,7 @@
 import pyjson5
 import os
 
-launcher_groups = ["irl_launchers"]
+launcher_groups = ["misc_launchers","american_launchers","soviet_launchers"]
 
 launchers = []
 

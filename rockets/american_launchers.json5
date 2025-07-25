@@ -127,63 +127,6 @@
     "launch_thrust" : 34500
   },
   {
-    "name" : "Proton M (Briz-M)",
-    "stages" : [
-      "8S810K",
-      "8S811K",
-      "8S812",
-      [19.8, 2.37, 326, 19.62]
-    ],
-    "min_stages" : 3,
-    "orbit_deltav" : 9165,
-    "launch_thrust" : 8820
-  },
-  {
-    "name" : "Proton M (Blok DM-2)",
-    "stages" : [
-      "8S810K",
-      "8S811K",
-      "8S812",
-      [17.36, 2.14, 363.5, 83.61]
-    ],
-    "min_stages" : 4,
-    "orbit_deltav" : 9165,
-    "launch_thrust" : 8820
-  },
-  {
-    "name" : "Zenit 2",
-    "stages" : [
-      [354.35, 27.564, 324, 7887],
-      [90.047, 8.307, 350, 833]
-    ],
-    "min_stages" : 2,
-    // Calibrated off LEO data
-    "orbit_deltav" : 9290,
-    "launch_thrust" : 7550
-  },
-  {
-    "name" : "Electron Block 1",
-    "stages" : [
-      // Block 1 vacuum thrust unknown, taking wikipedia-sourced sea level value
-      [9.25, 0.95, 303, 162],
-      [2.15, 0.25, 333, 25.8]
-    ],
-    "min_stages" : 2,
-    "orbit_deltav" : 8978,
-    "launch_thrust" : 162
-  },
-  // Only factors in new specific impulse values - needs further adjustment
-  {
-    "name" : "Electron Block 2",
-    "stages" : [
-      [9.25, 0.95, 311, 224],
-      [2.15, 0.25, 343, 25.8]
-    ],
-    "min_stages" : 2,
-    "orbit_deltav" : 8978,
-    "launch_thrust" : 190
-  },
-  {
     "name" : "Space Shuttle",
     "stages" : [
       [760, 26.5, 409.15, 6837],
@@ -234,34 +177,6 @@
     "booster_counts" : [2],
   },
   {
-    "name" : "Soyuz 2.1b",
-    "stages" : [
-      [99.77, 6.55, 287, 990.2],
-      [27.76, 2.36, 359, 294.3],
-      // Fregat upper stage
-      [6.24, .945, 327, 19.61],
-    ],
-    "min_stages" : 1,
-    // TLI calibration - 9424 for LEO
-    "orbit_deltav" : 9385,
-    "launch_thrust" : 792.5,
-    "boosters" : ["Soyuz Booster"],
-    "booster_counts" : [2, 4],
-  },
-  {
-    "name" : "Ariane 5 ECA",
-    "stages" : [
-      // Using vacuum Isp instead of the average of sea level and vacuum - results in less adjustment required
-      [189, 14, 431.2, 1390],
-      [19.44, 4.54, 446, 67],
-    ],
-    "min_stages" : 1,
-    "orbit_deltav" : 9523,
-    "launch_thrust" : 960,
-    "boosters" : ["EAP P241"],
-    "booster_counts" : [2],
-  },
-  {
     "name" : "Atlas V",
     "stages" : [
       "Common Core Booster",
@@ -276,17 +191,15 @@
     "booster_counts" : [1, 2, 3, 4, 5],
   },
   {
-    "name" : "LVM3",
+    "name" : "Ares I",
     "stages" : [
-      // Modelling boosters as acting before core stage ignition
-      // core stage actually ignites before boosters detach
-      [472, 62, 250.75, 10300],
-      [125, 9, 293, 1700],
-      [33, 5, 443, 186.36],
+      "5-segment SRB",
+      [150.3, 15.2, 428, 1307],
     ],
-    "min_stages" : 2,
-    // TLI calibration - 9742 for GTO
-    "orbit_deltav" : 9632,
-    "launch_thrust" : 10300,
+    "min_stages" : 1,
+    "orbit_deltav" : 9209,
+    "launch_thrust" : 14600,
+    "boosters" : ["5-segment SRB"],
+    "booster_counts" : [2],
   },
 ]

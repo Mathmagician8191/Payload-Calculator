@@ -1,0 +1,51 @@
+[
+  {
+    "name" : "Electron Block 1",
+    "stages" : [
+      // Block 1 vacuum thrust unknown, taking wikipedia-sourced sea level value
+      [9.25, 0.95, 303, 162],
+      [2.15, 0.25, 333, 25.8]
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : 8978,
+    "launch_thrust" : 162
+  },
+  // Only factors in new specific impulse values - needs further adjustment
+  {
+    "name" : "Electron Block 2",
+    "stages" : [
+      [9.25, 0.95, 311, 224],
+      [2.15, 0.25, 343, 25.8]
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : 8978,
+    "launch_thrust" : 190
+  },
+  {
+    "name" : "Ariane 5 ECA",
+    "stages" : [
+      // Using vacuum Isp instead of the average of sea level and vacuum - results in less adjustment required
+      [189, 14, 431.2, 1390],
+      [19.44, 4.54, 446, 67],
+    ],
+    "min_stages" : 1,
+    "orbit_deltav" : 9523,
+    "launch_thrust" : 960,
+    "boosters" : ["EAP P241"],
+    "booster_counts" : [2],
+  },
+  {
+    "name" : "LVM3",
+    "stages" : [
+      // Modelling boosters as acting before core stage ignition
+      // core stage actually ignites before boosters detach
+      [472, 62, 250.75, 10300],
+      [125, 9, 293, 1700],
+      [33, 5, 443, 186.36],
+    ],
+    "min_stages" : 2,
+    // TLI calibration - 9742 for GTO
+    "orbit_deltav" : 9632,
+    "launch_thrust" : 10300,
+  },
+]

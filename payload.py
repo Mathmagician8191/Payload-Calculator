@@ -6,11 +6,11 @@ from orbits import *
 start = perf_counter()
 
 def print_margin(solution):
-  _, name, margin, twr = solution
+  _, name, margin, twr, _ = solution
   print(f"{name} Margin: {margin:.1f} m/s (Launch TWR: {twr:.2f})")
 
 def print_payload(solution):
-  _, name, payload, twr = solution
+  _, name, payload, twr, _ = solution
   print(f"{name} Payload: {payload:.3f}t (Launch TWR: {twr:.2f})")
 
 # if None, max payload will be calculated
@@ -40,6 +40,7 @@ solutions = []
 for launcher in launchers:
   orbit_deltav = (launcher["orbit_deltav"] or ORBIT_ESTIMATE) if include_orbit else 0
   launcher_deltav = orbit_deltav + required_deltav
+  launcher_solutions = []
   for configuration in configuations(launcher):
     data = configuration_data(configuration)
     stages = data["stages"] + payload_stages
@@ -64,13 +65,28 @@ for launcher in launchers:
       _, wet_mass = delta_v(working_payload, stages, launcher_deltav)
       if working_payload > 0:
         twr = thrust / wet_mass / DEFAULT[GRAVITY]
-        solutions.append((wet_mass / working_payload, name, working_payload, twr))
+        launcher_solutions.append((wet_mass / working_payload, name, working_payload, twr, configuration))
     else:
       margin, wet_mass = delta_v(payload, stages, launcher_deltav, min_accel)
       if margin is not None and margin >= required_margin:
         twr = thrust / wet_mass / DEFAULT[GRAVITY]
         if twr >= min_launch_twr:
-          solutions.append((wet_mass, name, margin, twr))
+          launcher_solutions.append((wet_mass, name, margin, twr, configuration))
+  launcher_solutions.sort(key=lambda k : k[2], reverse=True)
+  existing_solutions = []
+  for solution in launcher_solutions:
+    solution_config = solution[4]
+    for comparison in existing_solutions:
+      comparison_config = comparison[4]
+      # new solution has at least as many stages
+      if comparison_config[1] <= solution_config[1]:
+        # old solution has no boosters
+        if comparison_config[2] is None: break
+        # old solution has less boosters
+        if comparison_config[2] == solution_config[2] and comparison_config[3] < solution_config[3]: break
+    else:
+      existing_solutions.append(solution)
+  solutions += existing_solutions
 
 print_solution = print_payload if payload is None else print_margin
 

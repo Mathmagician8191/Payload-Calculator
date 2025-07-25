@@ -143,19 +143,19 @@
     thrust : 613.8,
   },
   {
+    name : "S-IVB",
+    wet_mass : 123,
+    dry_mass : 15.2,
+    isp : 421,
+    thrust : 1033.1
+  },
+  {
     name : "Dragon 2",
     wet_mass : 9.099,
     dry_mass : 7.711,
     isp : 300,
     // Superdracos, calculated assuming identical mass flow rate compared to sea level
     thrust : 725
-  },
-  {
-    name : "S-IVB",
-    wet_mass : 123,
-    dry_mass : 15.2,
-    isp : 421,
-    thrust : 1033.1
   },
   {
     name : "Star 48B S",
