@@ -125,14 +125,15 @@
   {
     name : "PT Series Munsplorer",
     stages : [
-      [20.7, 4.7, 313, 695],
       [10.5, 2.5, 320, 215],
       [2.79, 0.79, 345, 60],
       [2.1875, 0.6875, 345, 60],
     ],
-    min_stages : 2,
+    min_stages : 1,
     orbit_deltav : null,
-    launch_thrust : 578.29,
+    launch_thrust : 167.97,
+    boosters : ["PT Series Munsplorer Booster"],
+    booster_counts : [2, 3, 4],
   },
   {
     name : "Science Jr",

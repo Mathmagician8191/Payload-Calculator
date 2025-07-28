@@ -74,6 +74,15 @@
     asparagus: true
   },
   {
+    name : "PT Series Munsplorer Booster",
+    wet_mass : 10.35,
+    dry_mass : 2.35,
+    isp : 310,
+    thrust : 240,
+    launch_thrust: 205.16,
+    asparagus: true
+  },
+  {
     name : "Goliath II Stage 2",
     wet_mass : 6.1,
     dry_mass : 1.6,
