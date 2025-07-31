@@ -32,14 +32,18 @@
     wet_mass : 60.7,
     dry_mass : 12.7,
     isp : 310,
-    thrust : 1500
+    thrust : 1500,
+    launch_thrust : 1379.03,
+    asparagus : true,
   },
   {
     name : "Kerbal X Extended Core",
     wet_mass : 96.7,
     dry_mass : 16.7,
     isp : 310,
-    thrust : 1500
+    thrust : 1500,
+    launch_thrust : 1379.03,
+    asparagus : true,
   },
   {
     name : "Kerbal X Skipper Core",

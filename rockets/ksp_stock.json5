@@ -64,7 +64,7 @@
     min_stages : 1,
     orbit_deltav : null,
     launch_thrust : 1379.03,
-    boosters : ["Kerbal X Booster", "Kerbal X Reliant Booster"],
+    boosters : ["Kerbal X Booster", "Kerbal X Reliant Booster", "Kerbal X Core"],
     booster_counts : [2, 4, 6],
   },
   {
@@ -76,7 +76,7 @@
     min_stages : 1,
     orbit_deltav : null,
     launch_thrust : 1379.03,
-    boosters : ["Kerbal X Booster", "Kerbal X Reliant Booster"],
+    boosters : ["Kerbal X Booster", "Kerbal X Reliant Booster", "Kerbal X Extended Core"],
     booster_counts : [2, 4, 6],
   },
   {
@@ -160,6 +160,16 @@
     name : "Acapello fully fueled",
     stages : [
       [544.6, 84.4, 305, 6750],
+      [16.4, 3.9, 330, 300],
+    ],
+    min_stages : 1,
+    orbit_deltav : null,
+    launch_thrust : 6418,
+  },
+  {
+    name : "Adjusted Acapello",
+    stages : [
+      [508.6, 80.4, 305, 6750],
       [16.4, 3.9, 330, 300],
     ],
     min_stages : 1,
