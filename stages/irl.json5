@@ -93,6 +93,16 @@
     asparagus : false
   },
   {
+    name : "P120C",
+    wet_mass : 155.03,
+    dry_mass : 13.39,
+    // Unknown whether isp/thrust are sea level or vacuum
+    isp : 279,
+    thrust : 4323,
+    launch_thrust : 4323,
+    asparagus : false
+  },
+  {
     name : "Common Core Booster",
     wet_mass : 284.09,
     dry_mass : 21.05,

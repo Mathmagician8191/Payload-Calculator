@@ -35,6 +35,31 @@
     "booster_counts" : [2],
   },
   {
+    "name" : "Vega",
+    "stages" : [
+      // Unknown if thrust/isp is sea level, vacuum or a mix
+      [95.7, 7.33, 280, 2261],
+      [28.85, 2.85, 287.5, 871],
+      [11.82, 1.32, 296, 260],
+      [.697, .147, 314.6, 2.45],
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : 9480,
+    "launch_thrust" : 2261,
+  },
+  {
+    "name" : "Vega C",
+    "stages" : [
+      "P120C",
+      [40.48, 4.24, 293.5, 1304],
+      [12, 1.43, 295.9, 317],
+      [1.44, .698, 315.8, 2.42],
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : 9487,
+    "launch_thrust" : 4323,
+  },
+  {
     "name" : "LVM3",
     "stages" : [
       // Modelling boosters as acting before core stage ignition
