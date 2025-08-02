@@ -23,7 +23,7 @@
   {
     name : "Falcon 9 Stage 1 (ASDS)",
     wet_mass : 433.1,
-    dry_mass : 69,
+    dry_mass : 51.16,
     isp : 297,
     thrust : 8226
   },
