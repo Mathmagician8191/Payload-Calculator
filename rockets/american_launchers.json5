@@ -108,6 +108,8 @@
     "stages" : [
       [441.4, 42, 272, 8160],
       "S-IVB",
+      // Centaur D upper stage
+      [15.32, 1.83, 444, 131.2],
     ],
     "min_stages" : 2,
     "orbit_deltav" : 8762,
@@ -127,10 +129,37 @@
     "launch_thrust" : 34500
   },
   {
+    "name" : "Saturn C-5N",
+    "stages" : [
+      // Slightly different to Saturn V S-I
+      [2217.3, 131.5, 283, 38850],
+      // Taken by multiplying J-2 thrust by 5 - wikipedia says 4400 instead
+      // Significantly smaller than Saturn V S-II
+      [384.1, 31.74, 421, 5165],
+      [53.7, 10.43, 800, 266.8],
+    ],
+    "min_stages" : 2,
+    // TLI calibration - 9314 for LEO
+    "orbit_deltav" : 9510,
+    "launch_thrust" : 34500
+  },
+  {
+    "name" : "Saturn C-8",
+    "stages" : [
+      [3627.5, 181.4, 283, 62160],
+      [770.8, 63.48, 421, 8264],
+      "S-IVB",
+    ],
+    "min_stages" : 2,
+    // TLI calibration - 9462 for LEO
+    "orbit_deltav" : 9406,
+    "launch_thrust" : 55200
+  },
+  {
     "name" : "Space Shuttle",
     "stages" : [
-      [760, 26.5, 409.15, 6837],
-      [88.83, 78, 316, 53.4]
+      "External Tank",
+      "Shuttle Orbiter",
     ],
     "min_stages" : 2,
     "orbit_deltav" : 9026,
@@ -149,6 +178,19 @@
     "launch_thrust" : 5580,
     "boosters" : ["4-segment SRB","5-segment SRB"],
     "booster_counts" : [2],
+  },
+  {
+    "name" : "Saturn Shuttle",
+    "stages" : [
+      // Using older External Tank with higher dry mass
+      [751, 29.9, 409.15, 6837],
+      "Shuttle Orbiter",
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : 9452,
+    "launch_thrust" : 5580,
+    "boosters" : ["Saturn-Shuttle S-1C"],
+    "booster_counts" : [1],
   },
   {
     "name" : "SLS Block 1",

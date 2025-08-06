@@ -68,6 +68,24 @@
     asparagus : false
   },
   {
+    name : "External Tank",
+    wet_mass : 760,
+    dry_mass : 26.5,
+    // From 3x SSME
+    isp : 409.15,
+    thrust : 6837,
+    launch_thrust : 5580
+  },
+  {
+    name : "Saturn-Shuttle S-1C",
+    wet_mass : 2286.2,
+    dry_mass : 135.2,
+    isp : 283,
+    thrust : 38850,
+    launch_thrust : 34500,
+    asparagus : false
+  },
+  {
     name : "SLS Core Stage",
     wet_mass : 1084.94,
     dry_mass : 97.94,
@@ -158,6 +176,13 @@
     dry_mass : 15.2,
     isp : 421,
     thrust : 1033.1
+  },
+  {
+    name : "Shuttle Orbiter",
+    wet_mass : 88.83,
+    dry_mass : 78,
+    isp : 316,
+    thrust : 53.4
   },
   {
     name : "Dragon 2",
