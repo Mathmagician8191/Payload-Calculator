@@ -241,7 +241,31 @@
     "min_stages" : 1,
     "orbit_deltav" : 9209,
     "launch_thrust" : 14600,
-    "boosters" : ["5-segment SRB"],
-    "booster_counts" : [2],
+  },
+  // Adds a pair of serially staged boosters to the core
+  {
+    "name" : "Ares I Extra Boosters",
+    "stages" : [
+      [1460, 182, 255, 35800],
+      "5-segment SRB",
+      [150.3, 15.2, 428, 1307],
+    ],
+    "min_stages" : 2,
+    // Assuming default delta-v due to lower TWR than Ares I
+    "orbit_deltav" : null,
+    "launch_thrust" : 29200,
+  },
+  {
+    "name" : "Pegasus XL",
+    "stages" : [
+      // Unknown whether Isp is sea level of vacuum
+      [16.38, 1.37, 295, 726],
+      [4.31, .391, 289, 158],
+      [.872, .102, 287, 32.7],
+      // Unable to find stats for HAPS kick stage
+    ],
+    "min_stages" : 2,
+    "orbit_deltav" : 9148,
+    "launch_thrust" : 726,
   },
 ]
