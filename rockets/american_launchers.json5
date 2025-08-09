@@ -225,8 +225,9 @@
       [20.83, 2.32, 450.5, 99.2],
     ],
     min_stages : 1,
-    // Calibrated off 551 GTO payload
-    orbit_deltav : 9021,
+    // Calibrated off GTO - 10081/-109 for LEO
+    orbit_deltav : 9509,
+    booster_offset : -81,
     launch_thrust : 3827,
     // TODO: find information about AJ-60A
     boosters : ["GEM 63", "GEM 63XL"],

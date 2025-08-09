@@ -34,10 +34,14 @@ fig, ax = plt.subplots()
 for name, stage_counts, *extras in selected_launchers:
   for launcher in launchers:
     if launcher["name"] == name:
-      orbit_deltav = (launcher["orbit_deltav"] or ORBIT_ESTIMATE) if include_orbit else 0
       if not hasattr(stage_counts, "__iter__"):
         stage_counts = (stage_counts,)
       for stage_count in stage_counts:
+        orbit_deltav = 0
+        if include_orbit:
+          orbit_deltav = launcher["orbit_deltav"] or ORBIT_ESTIMATE
+          if "booster_offset" in launcher:
+            orbit_deltav += launcher["booster_offset"] * extras[1]
         data = configuration_data([launcher, stage_count] + extras)
         stages = data["stages"] + payload_stages
         name = data["name"]

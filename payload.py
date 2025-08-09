@@ -38,10 +38,14 @@ print(f"{required_deltav:.1f} m/s required after orbit")
 solutions = []
 
 for launcher in launchers:
-  orbit_deltav = (launcher["orbit_deltav"] or ORBIT_ESTIMATE) if include_orbit else 0
-  launcher_deltav = orbit_deltav + required_deltav
   launcher_solutions = []
   for configuration in configuations(launcher):
+    orbit_deltav = 0
+    if include_orbit:
+      orbit_deltav = launcher["orbit_deltav"] or ORBIT_ESTIMATE
+      if "booster_offset" in launcher:
+        orbit_deltav += launcher["booster_offset"] * configuration[3]
+    launcher_deltav = orbit_deltav + required_deltav
     data = configuration_data(configuration)
     stages = data["stages"] + payload_stages
     name = data["name"]
