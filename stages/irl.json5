@@ -140,11 +140,11 @@
   },
   {
     name : "GEM 63XL",
-    wet_mass : 53.4,
-    dry_mass : 5.4,
+    wet_mass : 53,
+    dry_mass : 4.5,
     // Vacuum value - cannot find sea level value to average with
-    isp : 280,
-    thrust : 2026,
+    isp : 280.3,
+    thrust : 2061,
     launch_thrust : 2026,
     asparagus : false
   },

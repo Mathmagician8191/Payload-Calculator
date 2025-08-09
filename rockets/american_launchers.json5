@@ -1,136 +1,136 @@
 [
   {
-    "name" : "Falcon 9",
-    "stages" : [
+    name : "Falcon 9",
+    stages : [
       "Falcon 9 Stage 1",
       "Falcon 9 Stage 2"
     ],
-    "min_stages" : 2,
+    min_stages : 2,
     // Calibrated to GTO payload
-    "orbit_deltav" : 9275,
-    "launch_thrust" : 7607
+    orbit_deltav : 9275,
+    launch_thrust : 7607
   },
   {
-    "name" : "Falcon 9 ASDS",
-    "stages" : [
+    name : "Falcon 9 ASDS",
+    stages : [
       "Falcon 9 Stage 1 (ASDS)",
       "Falcon 9 Stage 2"
     ],
-    "min_stages" : 2,
+    min_stages : 2,
     // assumed identical to Falcon 9 expendable GTO data
-    "orbit_deltav" : 9275,
-    "launch_thrust" : 7607
+    orbit_deltav : 9275,
+    launch_thrust : 7607
   },
   {
-    "name" : "Falcon 9 RTLS",
-    "stages" : [
+    name : "Falcon 9 RTLS",
+    stages : [
       "Falcon 9 Stage 1 (RTLS)",
       "Falcon 9 Stage 2"
     ],
-    "min_stages" : 2,
+    min_stages : 2,
     // assumed identical to Falcon 9 expendable GTO data
-    "orbit_deltav" : 9275,
-    "launch_thrust" : 7607
+    orbit_deltav : 9275,
+    launch_thrust : 7607
   },
   {
-    "name" : "Falcon 9SL",
-    "stages" : [
+    name : "Falcon 9SL",
+    stages : [
       "Falcon 9 Stage 1",
       "Falcon 9 Stage 2SL"
     ],
-    "min_stages" : 2,
+    min_stages : 2,
     // assumed identical to normal Falcon 9 GTO data
-    "orbit_deltav" : 9275,
-    "launch_thrust" : 7607
+    orbit_deltav : 9275,
+    launch_thrust : 7607
   },
   {
-    "name" : "Falcon 9SL ASDS",
-    "stages" : [
+    name : "Falcon 9SL ASDS",
+    stages : [
       "Falcon 9 Stage 1 (ASDS)",
       "Falcon 9 Stage 2SL"
     ],
-    "min_stages" : 2,
+    min_stages : 2,
     // assumed identical to Falcon 9 expendable GTO data
-    "orbit_deltav" : 9275,
-    "launch_thrust" : 7607
+    orbit_deltav : 9275,
+    launch_thrust : 7607
   },
   {
-    "name" : "Falcon 9SL RTLS",
-    "stages" : [
+    name : "Falcon 9SL RTLS",
+    stages : [
       "Falcon 9 Stage 1 (RTLS)",
       "Falcon 9 Stage 2SL"
     ],
-    "min_stages" : 2,
+    min_stages : 2,
     // assumed identical to Falcon 9 expendable GTO data
-    "orbit_deltav" : 9275,
-    "launch_thrust" : 7607
+    orbit_deltav : 9275,
+    launch_thrust : 7607
   },
   // crossfeed version
   {
-    "name" : "Falcon Heavy",
-    "stages" : [
+    name : "Falcon Heavy",
+    stages : [
       "Falcon Heavy Side Booster x2",
       "Falcon Heavy Core",
       "Falcon 9 Stage 2"
     ],
-    "min_stages" : 2,
+    min_stages : 2,
     // value taken from falcon 9 - overestimate as it gives less LEO payload than a non-crossfeed falcon heavy
-    "orbit_deltav" : 9254,
-    "launch_thrust" : 22821
+    orbit_deltav : 9254,
+    launch_thrust : 22821
   },
   // crossfeed version
   {
-    "name" : "Falcon Quad Heavy",
-    "stages" : [
+    name : "Falcon Quad Heavy",
+    stages : [
       "Falcon Heavy Side Booster x2",
       "Falcon Heavy Side Booster x2",
       "Falcon Heavy Core",
       "Falcon 9 Stage 2"
     ],
-    "min_stages" : 3,
+    min_stages : 3,
     // value taken from falcon 9 - overestimate
-    "orbit_deltav" : 9254,
-    "launch_thrust" : 38035
+    orbit_deltav : 9254,
+    launch_thrust : 38035
   },
   {
-    "name" : "Saturn I",
-    "stages" : [
+    name : "Saturn I",
+    stages : [
       [432.68, 45.27, 272, 7582.1],
       [50.58, 5.22, 410, 400],
       [15.6, 2, 425, 133.45],
     ],
-    "min_stages" : 2,
-    "orbit_deltav" : 9865,
-    "launch_thrust" : 7200
+    min_stages : 2,
+    orbit_deltav : 9865,
+    launch_thrust : 7200
   },
   {
-    "name" : "Saturn IB",
-    "stages" : [
+    name : "Saturn IB",
+    stages : [
       [441.4, 42, 272, 8160],
       "S-IVB",
       // Centaur D upper stage
       [15.32, 1.83, 444, 131.2],
     ],
-    "min_stages" : 2,
-    "orbit_deltav" : 8762,
-    "launch_thrust" : 7200
+    min_stages : 2,
+    orbit_deltav : 8762,
+    launch_thrust : 7200
   },
   {
-    "name" : "Saturn V",
-    "stages" : [
+    name : "Saturn V",
+    stages : [
       [2214, 137, 283, 38850],
       // Taken by multiplying J-2 thrust by 5 - wikipedia says 4400 instead
       [496.2, 40.1, 421, 5165],
       "S-IVB",
     ],
-    "min_stages" : 2,
+    min_stages : 2,
     // TLI calibration - 9285 for LEO
-    "orbit_deltav" : 9237,
-    "launch_thrust" : 34500
+    orbit_deltav : 9237,
+    launch_thrust : 34500
   },
   {
-    "name" : "Saturn C-5N",
-    "stages" : [
+    name : "Saturn C-5N",
+    stages : [
       // Slightly different to Saturn V S-I
       [2217.3, 131.5, 283, 38850],
       // Taken by multiplying J-2 thrust by 5 - wikipedia says 4400 instead
@@ -138,134 +138,148 @@
       [384.1, 31.74, 421, 5165],
       [53.7, 10.43, 800, 266.8],
     ],
-    "min_stages" : 2,
+    min_stages : 2,
     // TLI calibration - 9314 for LEO
-    "orbit_deltav" : 9510,
-    "launch_thrust" : 34500
+    orbit_deltav : 9510,
+    launch_thrust : 34500
   },
   {
-    "name" : "Saturn C-8",
-    "stages" : [
+    name : "Saturn C-8",
+    stages : [
       [3627.5, 181.4, 283, 62160],
       [770.8, 63.48, 421, 8264],
       "S-IVB",
     ],
-    "min_stages" : 2,
+    min_stages : 2,
     // TLI calibration - 9462 for LEO
-    "orbit_deltav" : 9406,
-    "launch_thrust" : 55200
+    orbit_deltav : 9406,
+    launch_thrust : 55200
   },
   {
-    "name" : "Space Shuttle",
-    "stages" : [
+    name : "Space Shuttle",
+    stages : [
       "External Tank",
       "Shuttle Orbiter",
     ],
-    "min_stages" : 2,
-    "orbit_deltav" : 9026,
-    "launch_thrust" : 5580,
-    "boosters" : ["4-segment SRB","5-segment SRB"],
-    "booster_counts" : [2],
+    min_stages : 2,
+    orbit_deltav : 9026,
+    launch_thrust : 5580,
+    boosters : ["4-segment SRB","5-segment SRB"],
+    booster_counts : [2],
   },
   {
-    "name" : "Space Shuttle Lifting ET",
-    "stages" : [
+    name : "Space Shuttle Lifting ET",
+    stages : [
       [733.5, 0, 409.15, 6837],
       [115.33, 104.5, 316, 53.4]
     ],
-    "min_stages" : 2,
-    "orbit_deltav" : 9026,
-    "launch_thrust" : 5580,
-    "boosters" : ["4-segment SRB","5-segment SRB"],
-    "booster_counts" : [2],
+    min_stages : 2,
+    orbit_deltav : 9026,
+    launch_thrust : 5580,
+    boosters : ["4-segment SRB","5-segment SRB"],
+    booster_counts : [2],
   },
   {
-    "name" : "Saturn Shuttle",
-    "stages" : [
+    name : "Saturn Shuttle",
+    stages : [
       // Using older External Tank with higher dry mass
       [751, 29.9, 409.15, 6837],
       "Shuttle Orbiter",
     ],
-    "min_stages" : 2,
-    "orbit_deltav" : 9452,
-    "launch_thrust" : 5580,
-    "boosters" : ["Saturn-Shuttle S-1C"],
-    "booster_counts" : [1],
+    min_stages : 2,
+    orbit_deltav : 9452,
+    launch_thrust : 5580,
+    boosters : ["Saturn-Shuttle S-1C"],
+    booster_counts : [1],
   },
   {
-    "name" : "SLS Block 1",
-    "stages" : [
+    name : "SLS Block 1",
+    stages : [
       "SLS Core Stage",
       [32.75, 3.8, 465.5, 110.1]
     ],
-    "min_stages" : 1,
+    min_stages : 1,
     // Calibrated for TLI - 9375 for LEO
-    "orbit_deltav" : 9342,
-    "launch_thrust" : 7440,
-    "boosters" : ["4-segment SRB","5-segment SRB"],
-    "booster_counts" : [2],
+    orbit_deltav : 9342,
+    launch_thrust : 7440,
+    boosters : ["4-segment SRB","5-segment SRB"],
+    booster_counts : [2],
   },
   {
-    "name" : "SLS Block 1B",
-    "stages" : [
+    name : "SLS Block 1B",
+    stages : [
       "SLS Core Stage",
       [143.11, 14.11, 460.1, 433.1]
     ],
-    "min_stages" : 2,
+    min_stages : 2,
     // Calibrated off TLI Payload
-    "orbit_deltav" : 9698,
-    "launch_thrust" : 7440,
-    "boosters" : ["4-segment SRB","5-segment SRB"],
-    "booster_counts" : [2],
+    orbit_deltav : 9698,
+    launch_thrust : 7440,
+    boosters : ["4-segment SRB","5-segment SRB"],
+    booster_counts : [2],
   },
   {
-    "name" : "Atlas V",
-    "stages" : [
+    name : "Atlas V",
+    stages : [
       "Common Core Booster",
       [20.83, 2.32, 450.5, 99.2],
     ],
-    "min_stages" : 1,
+    min_stages : 1,
     // Calibrated off 551 GTO payload
-    "orbit_deltav" : 9021,
-    "launch_thrust" : 3827,
+    orbit_deltav : 9021,
+    launch_thrust : 3827,
     // TODO: find information about AJ-60A
-    "boosters" : ["GEM 63", "GEM 63XL"],
-    "booster_counts" : [1, 2, 3, 4, 5],
+    boosters : ["GEM 63", "GEM 63XL"],
+    booster_counts : [1, 2, 3, 4, 5],
   },
   {
-    "name" : "Ares I",
-    "stages" : [
+    name : "Ares I",
+    stages : [
       "5-segment SRB",
       [150.3, 15.2, 428, 1307],
     ],
-    "min_stages" : 1,
-    "orbit_deltav" : 9209,
-    "launch_thrust" : 14600,
+    min_stages : 1,
+    orbit_deltav : 9209,
+    launch_thrust : 14600,
   },
   // Adds a pair of serially staged boosters to the core
   {
-    "name" : "Ares I Extra Boosters",
-    "stages" : [
+    name : "Ares I Extra Boosters",
+    stages : [
       [1460, 182, 255, 35800],
       "5-segment SRB",
       [150.3, 15.2, 428, 1307],
     ],
-    "min_stages" : 2,
+    min_stages : 2,
     // Assuming default delta-v due to lower TWR than Ares I
-    "orbit_deltav" : null,
-    "launch_thrust" : 29200,
+    orbit_deltav : null,
+    launch_thrust : 29200,
   },
   {
-    "name" : "Pegasus XL",
-    "stages" : [
-      // Unknown whether Isp is sea level of vacuum
+    name : "Pegasus XL",
+    stages : [
+      // Unknown whether Isp is sea level or vacuum
       [16.38, 1.37, 295, 726],
       [4.31, .391, 289, 158],
       [.872, .102, 287, 32.7],
       // Unable to find stats for HAPS kick stage
     ],
-    "min_stages" : 2,
-    "orbit_deltav" : 9148,
-    "launch_thrust" : 726,
+    min_stages : 2,
+    orbit_deltav : 9148,
+    launch_thrust : 726,
+  },
+  {
+    name : "Vulcan Centaur",
+    stages : [
+      // Using vacuum delta-v as it gives more realistic values
+      [382, 28.6, 340, 4893],
+      [24.3, 3.2, 453.8, 203.6],
+    ],
+    min_stages : 1,
+    // Calibrated for VC6 LEO
+    orbit_deltav : 9240,
+    launch_thrust : 4800,
+    boosters : ["GEM 63XL"],
+    booster_counts: [2, 4, 6],
   },
 ]

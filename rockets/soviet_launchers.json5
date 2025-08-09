@@ -1,62 +1,62 @@
 [
   {
-    "name" : "Proton M",
-    "stages" : [
+    name : "Proton M",
+    stages : [
       "8S810K",
       "8S811K",
       "8S812",
     ],
-    "min_stages" : 2,
-    "orbit_deltav" : 9165,
-    "launch_thrust" : 8820
+    min_stages : 2,
+    orbit_deltav : 9165,
+    launch_thrust : 8820
   },
   {
-    "name" : "Proton M (Briz-M)",
-    "stages" : [
+    name : "Proton M (Briz-M)",
+    stages : [
       "8S810K",
       "8S811K",
       "8S812",
       [19.8, 2.37, 326, 19.62]
     ],
-    "min_stages" : 4,
-    "orbit_deltav" : 9165,
-    "launch_thrust" : 8820
+    min_stages : 4,
+    orbit_deltav : 9165,
+    launch_thrust : 8820
   },
   {
-    "name" : "Proton M (Blok DM-2)",
-    "stages" : [
+    name : "Proton M (Blok DM-2)",
+    stages : [
       "8S810K",
       "8S811K",
       "8S812",
       [17.36, 2.14, 363.5, 83.61]
     ],
-    "min_stages" : 4,
-    "orbit_deltav" : 9165,
-    "launch_thrust" : 8820
+    min_stages : 4,
+    orbit_deltav : 9165,
+    launch_thrust : 8820
   },
   {
-    "name" : "Zenit 2",
-    "stages" : [
+    name : "Zenit 2",
+    stages : [
       [354.35, 27.564, 324, 7887],
       [90.047, 8.307, 350, 833]
     ],
-    "min_stages" : 2,
+    min_stages : 2,
     // Calibrated off LEO data
-    "orbit_deltav" : 9290,
-    "launch_thrust" : 7550
+    orbit_deltav : 9290,
+    launch_thrust : 7550
   },
   {
-    "name" : "Soyuz 2.1b",
-    "stages" : [
+    name : "Soyuz 2.1b",
+    stages : [
       [99.77, 6.55, 287, 990.2],
       [27.76, 2.36, 359, 294.3],
       // Fregat upper stage
       [6.24, .945, 327, 19.61],
     ],
-    "min_stages" : 1,
+    min_stages : 1,
     // TLI calibration - 9424 for LEO
-    "orbit_deltav" : 9385,
-    "launch_thrust" : 792.5,
+    orbit_deltav : 9385,
+    launch_thrust : 792.5,
     "boosters" : ["Soyuz Booster"],
     "booster_counts" : [2, 4],
   },
