@@ -57,7 +57,21 @@
     // TLI calibration - 9424 for LEO
     orbit_deltav : 9385,
     launch_thrust : 792.5,
-    "boosters" : ["Soyuz Booster"],
-    "booster_counts" : [2, 4],
+    boosters : ["Soyuz Booster"],
+    booster_counts : [2, 4],
+  },
+  {
+    name : "N1",
+    stages : [
+      // Wet mass reverse engineered from burn time and mass flow rate
+      [1932.3, 180.8, 313.5, 50178],
+      [498.6, 52.2, 330, 13380],
+      [185, 13.7, 353, 1600],
+      [61.8, 6, 353, 400],
+    ],
+    min_stages : 2,
+    // Calibrated for TLI - 9229 for LEO
+    orbit_deltav : 9175,
+    launch_thrust : 45028,
   },
 ]
