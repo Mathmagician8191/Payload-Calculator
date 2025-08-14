@@ -91,6 +91,9 @@ def configuration_data(configuration):
       stages = new_stages + stages
     else:
       core_stage, *others = stages
+      core_flow_rate = launcher["core_flow_rate"] if "core_flow_rate" in launcher else 1
+      thrust *= core_flow_rate
+      mass_flow *= core_flow_rate
       total_thrust = thrust + booster_thrust * count
       total_mass_flow = mass_flow + booster_mass_flow * count
       total_isp = total_thrust / total_mass_flow
