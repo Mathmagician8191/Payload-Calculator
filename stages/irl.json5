@@ -1,38 +1,36 @@
 [
   {
-    name : "Falcon Heavy Side Booster x2",
-    wet_mass : 866.2,
-    dry_mass : 44.4,
-    isp : 297,
-    thrust : 8226
-  },
-  {
-    name : "Falcon Heavy Core",
-    wet_mass : 433.1,
-    dry_mass : 22.2,
-    isp : 311,
-    thrust : 8226
-  },
-  {
     name : "Falcon 9 Stage 1",
     wet_mass : 433.1,
     dry_mass : 22.2,
     isp : 297,
-    thrust : 8226
+    thrust : 8226,
+    launch_thrust : 7607,
   },
   {
     name : "Falcon 9 Stage 1 (ASDS)",
     wet_mass : 433.1,
     dry_mass : 51.16,
     isp : 297,
-    thrust : 8226
+    thrust : 8226,
+    launch_thrust : 7607,
   },
   {
     name : "Falcon 9 Stage 1 (RTLS)",
     wet_mass : 433.1,
     dry_mass : 124.6,
     isp : 297,
-    thrust : 8226
+    thrust : 8226,
+    launch_thrust : 7607,
+  },
+  {
+    name : "Falcon Heavy Side Booster (Asparagus)",
+    wet_mass : 433.1,
+    dry_mass : 22.2,
+    isp : 297,
+    thrust : 8226,
+    launch_thrust : 7607,
+    asparagus : true,
   },
   {
     name : "Falcon 9 Stage 2",

@@ -6,9 +6,13 @@
       "Falcon 9 Stage 2"
     ],
     min_stages : 2,
-    // Calibrated to GTO payload
+    // Calibrated to GTO, (9255, -288) for LEO
     orbit_deltav : 9275,
-    launch_thrust : 7607
+    booster_offset : -343,
+    core_flow_rate : 0.788,
+    launch_thrust : 7607,
+    boosters : ["Falcon 9 Stage 1", "Falcon 9 Stage 1 (RTLS)", "Falcon Heavy Side Booster (Asparagus)"],
+    booster_counts : [2],
   },
   {
     name : "Falcon 9 ASDS",
@@ -64,33 +68,6 @@
     // assumed identical to Falcon 9 expendable GTO data
     orbit_deltav : 9275,
     launch_thrust : 7607
-  },
-  // crossfeed version
-  {
-    name : "Falcon Heavy",
-    stages : [
-      "Falcon Heavy Side Booster x2",
-      "Falcon Heavy Core",
-      "Falcon 9 Stage 2"
-    ],
-    min_stages : 2,
-    // value taken from falcon 9 - overestimate as it gives less LEO payload than a non-crossfeed falcon heavy
-    orbit_deltav : 9254,
-    launch_thrust : 22821
-  },
-  // crossfeed version
-  {
-    name : "Falcon Quad Heavy",
-    stages : [
-      "Falcon Heavy Side Booster x2",
-      "Falcon Heavy Side Booster x2",
-      "Falcon Heavy Core",
-      "Falcon 9 Stage 2"
-    ],
-    min_stages : 3,
-    // value taken from falcon 9 - overestimate
-    orbit_deltav : 9254,
-    launch_thrust : 38035
   },
   {
     name : "Saturn I",
