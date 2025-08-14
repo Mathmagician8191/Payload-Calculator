@@ -148,17 +148,32 @@
     booster_counts : [1, 2, 3, 4, 5],
   },
   {
-    name : "Pegasus XL",
+    name : "Pegasus",
     stages : [
-      // Unknown whether Isp is sea level or vacuum
-      [16.38, 1.37, 295, 726],
-      [4.31, .391, 289, 158],
-      [.872, .102, 287, 32.7],
+      // Vacuum, could not find sea level value
+      [13.41, 1.15, 292.3, 468],
+      [3.36, .304, 290.2, 115.5],
+      "Orion 38",
       // Unable to find stats for HAPS kick stage
     ],
     min_stages : 2,
-    orbit_deltav : 9148,
-    launch_thrust : 726,
+    orbit_deltav : 9128,
+    // Vacuum, could not find sea level value
+    launch_thrust : 468,
+  },
+  {
+    name : "Pegasus XL",
+    stages : [
+      // Vacuum, could not find sea level value
+      [16.41, 1.288, 292.8, 622],
+      [4.31, .367, 290.7, 158.2],
+      "Orion 38",
+      // Unable to find stats for HAPS kick stage
+    ],
+    min_stages : 2,
+    orbit_deltav : 9297,
+    // Vacuum, could not find sea level value
+    launch_thrust : 622,
   },
   {
     name : "Vulcan Centaur",

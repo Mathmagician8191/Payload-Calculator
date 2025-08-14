@@ -193,7 +193,13 @@
     launch_thrust : 5293.3,
     asparagus : false,
   },
-
+  {
+    name : "Orion 38",
+    wet_mass : .873,
+    dry_mass : .0935,
+    isp : 287,
+    thrust : 32.7,
+  },
   {
     name : "NERVA",
     wet_mass : 53.7,
