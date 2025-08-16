@@ -48,17 +48,17 @@
   },
   {
     name : "4-segment SRB",
-    wet_mass : 590,
-    dry_mass : 87.6,
+    wet_mass : 590.2,
+    dry_mass : 87.2,
     isp : 255,
-    thrust : 14700,
-    launch_thrust : 12000,
+    thrust : 14982,
+    launch_thrust : 12712,
     asparagus : false
   },
   {
     name : "5-segment SRB",
-    wet_mass : 730,
-    dry_mass : 91,
+    wet_mass : 733.7,
+    dry_mass : 72,
     isp : 255,
     // Estimated
     thrust : 17900,

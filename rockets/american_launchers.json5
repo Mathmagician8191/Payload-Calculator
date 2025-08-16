@@ -114,7 +114,8 @@
       "Shuttle Orbiter",
     ],
     min_stages : 2,
-    orbit_deltav : 9026,
+    // Excludes deorbit burn
+    orbit_deltav : 9006,
     launch_thrust : 5580,
     boosters : ["4-segment SRB","5-segment SRB"],
     booster_counts : [2],
@@ -126,8 +127,8 @@
       [32.75, 3.8, 465.5, 110.1]
     ],
     min_stages : 1,
-    // Calibrated for TLI - 9375 for LEO
-    orbit_deltav : 9342,
+    // Calibrated for TLI - 9459 for LEO
+    orbit_deltav : 9430,
     launch_thrust : 7440,
     boosters : ["4-segment SRB","5-segment SRB"],
     booster_counts : [2],
