@@ -57,7 +57,7 @@
     name : "SLS Block 1B",
     stages : [
       "SLS Core Stage",
-      [143.11, 14.11, 460.1, 433.1]
+      [143.11, 14.11, 460.1, 433.1],
     ],
     min_stages : 2,
     // Calibrated off TLI Payload
@@ -67,10 +67,23 @@
     booster_counts : [2],
   },
   {
+    name : "Ares V",
+    stages : [
+      "SLS Core Stage",
+      "Ares Stage 2",
+    ],
+    min_stages : 2,
+    // assumed identical to SLS Block 1B
+    orbit_deltav : 9777,
+    launch_thrust : 7440,
+    boosters : ["4-segment SRB","5-segment SRB"],
+    booster_counts : [2],
+  },
+  {
     name : "Ares I",
     stages : [
       "5-segment SRB",
-      [150.3, 15.2, 428, 1307],
+      "Ares Stage 2",
     ],
     min_stages : 1,
     orbit_deltav : 9404,
@@ -82,7 +95,7 @@
     stages : [
       [1467.4, 144, 255, 35800],
       "5-segment SRB",
-      [150.3, 15.2, 428, 1307],
+      "Ares Stage 2",
     ],
     min_stages : 2,
     // Probably higher in practise due to lower TWR than Ares I

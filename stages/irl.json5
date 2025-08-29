@@ -176,6 +176,13 @@
     thrust : 1033.1
   },
   {
+    name : "Ares Stage 2",
+    wet_mass : 150.3,
+    dry_mass : 15.2,
+    isp : 428,
+    thrust : 1307
+  },
+  {
     name : "Minuteman",
     wet_mass : 23.08,
     dry_mass : 2.29,

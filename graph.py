@@ -25,7 +25,7 @@ selected_launchers = [
 min_performance = -10
 
 # None to plot delta-v, else tuple of (planet, starting_altitude)
-plot_c3 = (EARTH, 200)
+plot_c3 = (systems["Earth"], 200)
 
 payload_increment = 0.01
 
