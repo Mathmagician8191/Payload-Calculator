@@ -249,5 +249,12 @@
     dry_mass : 0.3,
     isp : 289.1,
     thrust : 80
-  }
+  },
+  {
+    name : "Transtage",
+    wet_mass : 12.247,
+    dry_mass : 1.95,
+    isp : 311,
+    thrust : 36
+  },
 ]

@@ -35,7 +35,7 @@
   {
     name : "Transtage",
     stages : [
-      [12.247, 1.95, 311, 36]
+      "Transtage",
     ],
     min_stages : 1,
     launch_thrust : 36
