@@ -154,7 +154,7 @@
       "Common Core Booster",
       [21.13, 2.62, 450.5, 99.2],
     ],
-    min_stages : 1,
+    min_stages : 2,
     // ISS calibrated only
     orbit_deltav : 9635,
     booster_offset : -107,
