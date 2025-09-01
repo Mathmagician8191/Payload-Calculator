@@ -134,6 +134,31 @@
     booster_counts : [2],
   },
   {
+    name : "Atlas D",
+    stages : [
+      // Reverse engineered fuel distribution based on burn times
+      [93.62, 3.05, 264, 1880.6],
+      [22.48, 2.35, 303, 363.2],
+    ],
+    min_stages : 2,
+    orbit_deltav : 9260,
+    launch_thrust : 1587.2,
+  },
+  {
+    name : "Atlas II",
+    stages : [
+      // Reverse engineered fuel distribution based on burn times
+      [146.26, 4.19, 279, 2480],
+      [19.93, 6.1, 316, 386.3],
+      [18.83, 2.05, 444, 146.8],
+      [1.578, .275, 312, .98],
+    ],
+    min_stages : 2,
+    // Calibrated for LEO, 9168 for GTO
+    orbit_deltav : 9534,
+    launch_thrust : 2110.6,
+  },
+  {
     name : "Atlas V",
     stages : [
       "Common Core Booster",

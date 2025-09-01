@@ -102,4 +102,43 @@
     orbit_deltav : 9404,
     launch_thrust : 29200,
   },
+  {
+    name : "Atlas D SSTO",
+    stages : [
+      // Reverse engineered fuel distribution based on burn times
+      [90.57, 0, 264, 1880.6],
+      [23.77, 3.64, 303, 363.2],
+    ],
+    min_stages : 2,
+    orbit_deltav : 9260,
+    launch_thrust : 1587.2,
+  },
+  {
+    name : "Atlas II without engine drop",
+    stages : [
+      // Reverse engineered fuel distribution based on burn times
+      [142.07, 0, 279, 2480],
+      [24.12, 10.29, 316, 386.3],
+      [18.83, 2.05, 444, 146.8],
+      [1.578, .275, 312, .98],
+    ],
+    min_stages : 2,
+    // Calibrated for LEO, 9168 for GTO
+    orbit_deltav : 9534,
+    launch_thrust : 2110.6,
+  },
+  {
+    name : "Atlas II integrated",
+    stages : [
+      // Reverse engineered fuel distribution based on burn times
+      [142.07, 0, 279, 2480],
+      [21.54, 7.71, 316, 386.3],
+      [18.83, 2.05, 444, 146.8],
+      [1.578, .275, 312, .98],
+    ],
+    min_stages : 2,
+    // Calibrated for LEO, 9168 for GTO
+    orbit_deltav : 9534,
+    launch_thrust : 2110.6,
+  },
 ]
