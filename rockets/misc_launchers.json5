@@ -28,7 +28,7 @@
       [189, 14, 431.2, 1390],
       [11.2, 1.2, 324, 29.6],
     ],
-    min_stages : 1,
+    min_stages : 2,
     // Calibrated for GTO - 10053 for LEO
     orbit_deltav : 9943,
     launch_thrust : 960,
