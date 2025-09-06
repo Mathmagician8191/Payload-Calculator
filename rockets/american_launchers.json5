@@ -216,10 +216,11 @@
     // Vacuum, could not find sea level value
     launch_thrust : 622,
   },
+  // Note: needs adjustment for core stage throttle down
   {
     name : "Vulcan Centaur",
     stages : [
-      // Using vacuum delta-v as it gives more realistic values
+      // Using vacuum isp as it gives more realistic values
       [382, 28.6, 340, 4893],
       [24.3, 3.2, 453.8, 203.6],
     ],
@@ -229,5 +230,19 @@
     launch_thrust : 4800,
     boosters : ["GEM 63XL"],
     booster_counts: [2, 4, 6],
+  },
+  {
+    name : "Titan IIIE",
+    stages : [
+      // Using vacuum isp as it gives more realistic values
+      [116.57, 5.44, 302, 2339.76],
+      [29.19, 2.65, 316, 453.71],
+      [16.26, 2.63, 444, 131.22],
+    ],
+    min_stages : 1,
+    orbit_deltav : 8975,
+    launch_thrust : 1936.89,
+    boosters : ["UA1205"],
+    booster_counts: [2],
   },
 ]

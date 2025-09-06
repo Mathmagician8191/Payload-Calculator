@@ -43,7 +43,7 @@ for launcher in launchers:
     orbit_deltav = 0
     if include_orbit:
       orbit_deltav = launcher["orbit_deltav"] or ORBIT_ESTIMATE
-      if "booster_offset" in launcher:
+      if len(configuration) > 0 and "booster_offset" in launcher:
         orbit_deltav += launcher["booster_offset"] * configuration[3]
     launcher_deltav = orbit_deltav + required_deltav
     data = configuration_data(configuration)

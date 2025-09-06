@@ -40,7 +40,7 @@ for name, stage_counts, *extras in selected_launchers:
         orbit_deltav = 0
         if include_orbit:
           orbit_deltav = launcher["orbit_deltav"] or ORBIT_ESTIMATE
-          if "booster_offset" in launcher:
+          if len(extras) > 0 and "booster_offset" in launcher:
             orbit_deltav += launcher["booster_offset"] * extras[1]
         data = configuration_data([launcher, stage_count] + extras)
         stages = data["stages"] + payload_stages
