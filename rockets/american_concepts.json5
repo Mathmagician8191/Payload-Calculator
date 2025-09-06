@@ -141,4 +141,24 @@
     orbit_deltav : 9534,
     launch_thrust : 2110.6,
   },
+  {
+    name : "Sea Dragon",
+    stages : [
+      [12694, 1218.5,  262.5, 417230],
+      [4826.9, 465.7, 409, 62887],
+    ],
+    min_stages : 2,
+    orbit_deltav : 9228,
+    launch_thrust : 356300,
+  },
+  {
+    name : "Sea Dragon (Recoverable)",
+    stages : [
+      [12811, 1334.6,  262.5, 417230],
+      [4826.9, 465.7, 409, 62887],
+    ],
+    min_stages : 2,
+    orbit_deltav : 9234,
+    launch_thrust : 356300,
+  },
 ]

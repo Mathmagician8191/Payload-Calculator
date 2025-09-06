@@ -87,7 +87,7 @@ for launcher in launchers:
         # old solution has no boosters
         if comparison_config[2] is None: break
         # old solution has less boosters
-        if comparison_config[2] == solution_config[2] and comparison_config[3] < solution_config[3]: break
+        if comparison_config[2] == solution_config[2] and comparison_config[3] <= solution_config[3]: break
     else:
       existing_solutions.append(solution)
   solutions += existing_solutions
