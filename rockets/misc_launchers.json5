@@ -22,6 +22,20 @@
     launch_thrust : 190
   },
   {
+    name : "Ariane 5 ES",
+    stages : [
+      // Using vacuum Isp instead of the average of sea level and vacuum - results in less adjustment required
+      [189, 14, 431.2, 1390],
+      [11.2, 1.2, 324, 29.6],
+    ],
+    min_stages : 1,
+    // Calibrated for GTO - 10053 for LEO
+    orbit_deltav : 9943,
+    launch_thrust : 960,
+    "boosters" : ["EAP P241"],
+    "booster_counts" : [2],
+  },
+  {
     name : "Ariane 5 ECA",
     stages : [
       // Using vacuum Isp instead of the average of sea level and vacuum - results in less adjustment required
@@ -29,6 +43,7 @@
       [19.44, 4.54, 446, 67],
     ],
     min_stages : 1,
+    // Calibrated for GTO
     orbit_deltav : 9523,
     launch_thrust : 960,
     "boosters" : ["EAP P241"],
