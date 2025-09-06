@@ -29,6 +29,16 @@
     launch_thrust : 55200
   },
   {
+    name : "Saturn V-4X",
+    stages : [
+      [12895.2, 847.6, 284.5, 183702],
+      [1976.4, 169.2, 421, 20676],
+    ],
+    min_stages : 2,
+    orbit_deltav : 9375,
+    launch_thrust : 160135
+  },
+  {
     name : "Space Shuttle Lifting ET",
     stages : [
       [733.5, 0, 409.15, 6837],

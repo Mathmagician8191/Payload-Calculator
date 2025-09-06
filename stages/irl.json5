@@ -230,6 +230,14 @@
     thrust : 725
   },
   {
+    name : "Star 37E",
+    wet_mass : 1.123,
+    dry_mass : 0.0831,
+    isp : 283.6,
+    // Using value from star 48B as a placeholder - real value unknown
+    thrust : 66.7
+  },
+  {
     name : "Star 48B S",
     wet_mass : 2.134,
     dry_mass : 0.124,
