@@ -240,9 +240,52 @@
       [16.26, 2.63, 444, 131.22],
     ],
     min_stages : 1,
+    // Calibrated for LEO
     orbit_deltav : 8975,
     launch_thrust : 1936.89,
     boosters : ["UA1205"],
+    booster_counts: [2],
+  },
+  {
+    name : "Titan IVA",
+    stages : [
+      [163, 8, 302, 2428.31],
+      [39.5, 4.5, 316, 459.51],
+    ],
+    min_stages : 1,
+    // Calibrated for LEO
+    orbit_deltav : 8958,
+    launch_thrust : 2006,
+    boosters : ["UA1207"],
+    booster_counts: [2],
+  },
+  {
+    name : "Titan IVA-Centaur",
+    stages : [
+      [163, 8, 302, 2428.31],
+      [39.5, 4.5, 316, 459.51],
+      [23.88, 2.775, 444, 164.8],
+    ],
+    min_stages : 3,
+    // Calibrated for GEO - 9191 for LEO
+    orbit_deltav : 8527,
+    launch_thrust : 2006,
+    boosters : ["UA1207"],
+    booster_counts: [2],
+  },
+  {
+    name : "Titan 402",
+    stages : [
+      [163, 8, 302, 2428.31],
+      [39.5, 4.5, 316, 459.51],
+      "IUS Stage 1",
+      "IUS Stage 2",
+    ],
+    min_stages : 3,
+    // Calibrated for LEO
+    orbit_deltav : 8790,
+    launch_thrust : 2006,
+    boosters : ["UA1207"],
     booster_counts: [2],
   },
 ]

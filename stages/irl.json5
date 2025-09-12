@@ -201,6 +201,15 @@
     asparagus : false,
   },
   {
+    name : "UA1207",
+    wet_mass : 319.33,
+    dry_mass : 51.23,
+    isp : 258.5,
+    thrust : 7117,
+    launch_thrust : 6410.5,
+    asparagus : false,
+  },
+  {
     name : "Orion 38",
     wet_mass : .873,
     dry_mass : .0935,
