@@ -201,6 +201,15 @@
     asparagus : false,
   },
   {
+    name : "UA1206",
+    wet_mass : 251.43,
+    dry_mass : 40.83,
+    isp : 252.5,
+    thrust : 6227,
+    launch_thrust : 5639.5,
+    asparagus : false,
+  },
+  {
     name : "UA1207",
     wet_mass : 319.33,
     dry_mass : 51.23,

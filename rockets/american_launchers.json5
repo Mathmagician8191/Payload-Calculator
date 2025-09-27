@@ -247,6 +247,22 @@
     booster_counts: [2],
   },
   {
+    name : "Titan 34D",
+    stages : [
+      // Using vacuum isp as it gives more realistic values
+      [139.94, 7, 302, 2413.2],
+      [37.56, 2.9, 316, 460.3],
+      "IUS Stage 1",
+      "IUS Stage 2",
+    ],
+    min_stages : 1,
+    // Calibrated for GTO - 8928 for LEO
+    orbit_deltav : 9039,
+    launch_thrust : 1997.7,
+    boosters : ["UA1206"],
+    booster_counts: [2],
+  },
+  {
     name : "Titan IVA",
     stages : [
       [163, 8, 302, 2428.31],
