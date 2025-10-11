@@ -139,15 +139,15 @@
   // Estimated dry mass reduction from removing flaps, TPS and fairing
   {
     name : "Starship (v4)",
-    wet_mass : 2432,
-    dry_mass : 157,
+    wet_mass : 2438,
+    dry_mass : 163,
     isp : 368,
     thrust : 26487
   },
   {
     name : "Starship (v4 Reusable)",
-    wet_mass : 2472,
-    dry_mass : 232,
+    wet_mass : 2480,
+    dry_mass : 240,
     isp : 373,
     thrust : 26487
   },
