@@ -304,4 +304,128 @@
     boosters : ["UA1207"],
     booster_counts: [2],
   },
+  {
+    name : "Starship v1 (Reusable)",
+    stages : [
+      "Super Heavy (v1 RTLS)",
+      "Starship (v1 Reusable)",
+    ],
+    min_stages : 2,
+    // Calibrated off 15t to LEO
+    orbit_deltav : 9432,
+    launch_thrust : 69651,
+  },
+  {
+    name : "Starship v1 (Expendable Ship)",
+    stages : [
+      "Super Heavy (v1 RTLS)",
+      "Starship (v1)",
+    ],
+    min_stages : 2,
+    orbit_deltav : 9432,
+    launch_thrust : 69651,
+  },
+  {
+    name : "Starship v1 (Fully Expendable)",
+    stages : [
+      "Super Heavy (v1)",
+      "Starship (v1)",
+    ],
+    min_stages : 2,
+    orbit_deltav : 9432,
+    launch_thrust : 69651,
+  },
+  {
+    name : "Starship v2 (Reusable)",
+    stages : [
+      "Super Heavy (v1 RTLS)",
+      "Starship (v2 Reusable)",
+    ],
+    min_stages : 2,
+    // Calibrated off 35t to LEO
+    orbit_deltav : 9473,
+    launch_thrust : 69651,
+  },
+  {
+    name : "Starship v2 (Expendable Ship)",
+    stages : [
+      "Super Heavy (v1 RTLS)",
+      "Starship (v2)",
+    ],
+    min_stages : 2,
+    orbit_deltav : 9473,
+    launch_thrust : 69651,
+  },
+  {
+    name : "Starship v2 (Fully Expendable)",
+    stages : [
+      "Super Heavy (v1)",
+      "Starship (v2)",
+    ],
+    min_stages : 2,
+    orbit_deltav : 9473,
+    launch_thrust : 69651,
+  },
+  {
+    name : "Starship v3 (Reusable)",
+    stages : [
+      "Super Heavy (v3 RTLS)",
+      "Starship (v3 Reusable)",
+    ],
+    min_stages : 2,
+    // Using v1 delta-v because it better matches the v3 TWR
+    orbit_deltav : 9432,
+    launch_thrust : 80834.4,
+  },
+  {
+    name : "Starship v3 (Expendable Ship)",
+    stages : [
+      "Super Heavy (v3 RTLS)",
+      "Starship (v3)",
+    ],
+    min_stages : 2,
+    orbit_deltav : 9432,
+    launch_thrust : 80834.4,
+  },
+  {
+    name : "Starship v3 (Fully Expendable)",
+    stages : [
+      "Super Heavy (v3)",
+      "Starship (v3)",
+    ],
+    min_stages : 2,
+    orbit_deltav : 9432,
+    launch_thrust : 80834.4,
+  },
+  {
+    name : "Starship v4 (Reusable)",
+    stages : [
+      "Super Heavy (v4 RTLS)",
+      "Starship (v4 Reusable)",
+    ],
+    min_stages : 2,
+    // Using v1 delta-v because it better matches the v4 TWR
+    orbit_deltav : 9432,
+    launch_thrust : 98100,
+  },
+  {
+    name : "Starship v4 (Expendable Ship)",
+    stages : [
+      "Super Heavy (v4 RTLS)",
+      "Starship (v4)",
+    ],
+    min_stages : 2,
+    orbit_deltav : 9432,
+    launch_thrust : 98100,
+  },
+  {
+    name : "Starship v4 (Fully Expendable)",
+    stages : [
+      "Super Heavy (v4)",
+      "Starship (v4)",
+    ],
+    min_stages : 2,
+    orbit_deltav : 9432,
+    launch_thrust : 98100,
+  },
 ]

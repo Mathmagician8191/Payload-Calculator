@@ -46,6 +46,111 @@
     isp : 311,
     thrust : 914
   },
+  // v1/v2 Based on IFT flight data analysis - dry mass includes residuals
+  // Grid fins removed
+  {
+    name : "Super Heavy (v1)",
+    wet_mass : 3530,
+    dry_mass : 280,
+    isp : 337,
+    thrust : 69651
+  },
+  {
+    name : "Super Heavy (v1 RTLS)",
+    wet_mass : 3542,
+    dry_mass : 582,
+    isp : 337,
+    thrust : 69651
+  },
+  // Estimated dry mass reduction from removing flaps, TPS and fairing
+  {
+    name : "Starship (v1)",
+    wet_mass : 1310,
+    dry_mass : 140,
+    isp : 365,
+    thrust : 12262.5
+  },
+  {
+    name : "Starship (v1 Reusable)",
+    wet_mass : 1350,
+    dry_mass : 215,
+    isp : 365,
+    thrust : 12262.5
+  },
+  // Estimated dry mass reduction from removing flaps, TPS and fairing
+  {
+    name : "Starship (v2)",
+    wet_mass : 1625,
+    dry_mass : 150,
+    isp : 365,
+    thrust : 13734
+  },
+  {
+    name : "Starship (v2 Reusable)",
+    wet_mass : 1665,
+    dry_mass : 225,
+    isp : 365,
+    thrust : 13734
+  },
+  // Even more speculative stats for v3/v4
+  {
+    name : "Super Heavy (v3)",
+    wet_mass : 3883,
+    dry_mass : 233,
+    isp : 340,
+    thrust : 80834.4
+  },
+  {
+    name : "Super Heavy (v3 RTLS)",
+    wet_mass : 3892,
+    dry_mass : 494,
+    isp : 340,
+    thrust : 80834.4
+  },
+  {
+    name : "Super Heavy (v4)",
+    wet_mass : 4291,
+    dry_mass : 241,
+    isp : 340,
+    thrust : 98100
+  },
+  {
+    name : "Super Heavy (v4 RTLS)",
+    wet_mass : 4300,
+    dry_mass : 510,
+    isp : 340,
+    thrust : 98100
+  },
+  // Estimated dry mass reduction from removing flaps, TPS and fairing
+  {
+    name : "Starship (v3)",
+    wet_mass : 1718,
+    dry_mass : 143,
+    isp : 368,
+    thrust : 15696
+  },
+  {
+    name : "Starship (v3 Reusable)",
+    wet_mass : 1758,
+    dry_mass : 218,
+    isp : 368,
+    thrust : 15696
+  },
+  // Estimated dry mass reduction from removing flaps, TPS and fairing
+  {
+    name : "Starship (v4)",
+    wet_mass : 2432,
+    dry_mass : 157,
+    isp : 368,
+    thrust : 26487
+  },
+  {
+    name : "Starship (v4 Reusable)",
+    wet_mass : 2472,
+    dry_mass : 232,
+    isp : 373,
+    thrust : 26487
+  },
   {
     name : "4-segment SRB",
     wet_mass : 590.2,
