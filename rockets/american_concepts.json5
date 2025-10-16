@@ -171,4 +171,98 @@
     orbit_deltav : 9234,
     launch_thrust : 356300,
   },
+  {
+    name : "Starship v3 (Reusable)",
+    stages : [
+      "Super Heavy (v3 RTLS)",
+      "Starship (v3 Reusable)",
+    ],
+    min_stages : 2,
+    // Using v1 delta-v because it better matches the v3 TWR
+    orbit_deltav : 9432,
+    launch_thrust : 80834.4,
+  },
+  {
+    name : "Starship v3 (Expendable Ship)",
+    stages : [
+      "Super Heavy (v3 RTLS)",
+      "Starship (v3)",
+    ],
+    min_stages : 2,
+    orbit_deltav : 9432,
+    launch_thrust : 80834.4,
+  },
+  {
+    name : "Starship v3 (Fully Expendable)",
+    stages : [
+      "Super Heavy (v3)",
+      "Starship (v3)",
+    ],
+    min_stages : 2,
+    orbit_deltav : 9432,
+    launch_thrust : 80834.4,
+  },
+  {
+    name : "Starship v4 (Reusable)",
+    stages : [
+      "Super Heavy (v4 RTLS)",
+      "Starship (v4 Reusable)",
+    ],
+    min_stages : 2,
+    // Using v1 delta-v because it better matches the v4 TWR
+    orbit_deltav : 9432,
+    launch_thrust : 98100,
+  },
+  {
+    name : "Starship v4 (Expendable Ship)",
+    stages : [
+      "Super Heavy (v4 RTLS)",
+      "Starship (v4)",
+    ],
+    min_stages : 2,
+    orbit_deltav : 9432,
+    launch_thrust : 98100,
+  },
+  {
+    name : "Starship v4 (Fully Expendable)",
+    stages : [
+      "Super Heavy (v4)",
+      "Starship (v4)",
+    ],
+    min_stages : 2,
+    orbit_deltav : 9432,
+    launch_thrust : 98100,
+  },
+  // v3 starship on v4 booster
+  {
+    name : "Starship v4 Mini (Reusable)",
+    stages : [
+      "Super Heavy (v4 RTLS)",
+      "Starship (v3 Reusable)",
+    ],
+    min_stages : 2,
+    // Real value probably lower due to high TWR
+    orbit_deltav : 9432,
+    launch_thrust : 98100,
+  },
+  {
+    name : "Starship v4 Mini (Expendable Ship)",
+    stages : [
+      "Super Heavy (v4 RTLS)",
+      "Starship (v3)",
+    ],
+    min_stages : 2,
+    orbit_deltav : 9432,
+    launch_thrust : 98100,
+  },
+  {
+    name : "Starship v4 Mini (Fully Expendable)",
+    stages : [
+      "Super Heavy (v4)",
+      "Starship (v3)",
+    ],
+    min_stages : 2,
+    orbit_deltav : 9432,
+    launch_thrust : 98100,
+  },
 ]
