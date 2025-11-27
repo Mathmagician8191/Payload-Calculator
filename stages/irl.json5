@@ -288,6 +288,20 @@
     thrust : 1307
   },
   {
+    name : "LR87",
+    wet_mass : 163,
+    dry_mass : 8,
+    isp : 302,
+    thrust : 2428.31
+  },
+  {
+    name : "LR91",
+    wet_mass : 39.5,
+    dry_mass : 4.5,
+    isp : 316,
+    thrust : 459.51
+  },
+  {
     name : "Minuteman",
     wet_mass : 23.08,
     dry_mass : 2.29,
