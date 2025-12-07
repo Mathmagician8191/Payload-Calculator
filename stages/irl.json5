@@ -281,6 +281,13 @@
     thrust : 1033.1
   },
   {
+    name : "Centaur V",
+    wet_mass : 53.6,
+    dry_mass : 7.1,
+    isp : 453.8,
+    thrust : 203.6,
+  },
+  {
     name : "Ares Stage 2",
     wet_mass : 150.3,
     dry_mass : 15.2,

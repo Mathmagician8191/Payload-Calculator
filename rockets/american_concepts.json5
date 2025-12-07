@@ -77,6 +77,19 @@
     booster_counts : [2],
   },
   {
+    name : "SLS-Centaur",
+    stages : [
+      "SLS Core Stage",
+      "Centaur V",
+    ],
+    min_stages : 2,
+    // assumed identical to SLS Block 1B
+    orbit_deltav : 9777,
+    launch_thrust : 7440,
+    boosters : ["4-segment SRB","5-segment SRB"],
+    booster_counts : [2],
+  },
+  {
     name : "Ares V",
     stages : [
       "SLS Core Stage",

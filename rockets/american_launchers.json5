@@ -220,13 +220,12 @@
   {
     name : "Vulcan Centaur",
     stages : [
-      // Using vacuum isp as it gives more realistic values
-      [382, 28.6, 340, 4893],
-      [24.3, 3.2, 453.8, 203.6],
+      [382, 28.6, 330, 4893],
+      "Centaur V",
     ],
     min_stages : 1,
     // Calibrated for VC6 LEO
-    orbit_deltav : 9241,
+    orbit_deltav : 8869,
     launch_thrust : 4800,
     boosters : ["GEM 63XL"],
     booster_counts: [2, 4, 6],
