@@ -141,7 +141,7 @@
     name : "Starship (v4)",
     wet_mass : 2438,
     dry_mass : 163,
-    isp : 368,
+    isp : 373,
     thrust : 26487
   },
   {
