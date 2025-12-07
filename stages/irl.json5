@@ -345,6 +345,15 @@
     asparagus : false,
   },
   {
+    name : "CZ-5-300",
+    wet_mass : 156.6,
+    dry_mass : 13.8,
+    isp : 317.2,
+    thrust : 2680,
+    launch_thrust : 2400,
+    asparagus : false,
+  },
+  {
     name : "Orion 38",
     wet_mass : .873,
     dry_mass : .0935,

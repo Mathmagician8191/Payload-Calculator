@@ -88,4 +88,18 @@
     orbit_deltav : 9632,
     launch_thrust : 10300,
   },
+  {
+    name : "Long March 5",
+    stages : [
+      [186.9, 21.6, 428, 1400],
+      [36, 6.9, 442.6, 176.72],
+      // TODO: YZ-2
+    ],
+    min_stages : 1,
+    // Calibrated for GTO - 9502 for LEO
+    orbit_deltav : 9388,
+    launch_thrust : 1036,
+    "boosters" : ["CZ-5-300"],
+    "booster_counts" : [4],
+  },
 ]

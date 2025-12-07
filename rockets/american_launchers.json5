@@ -224,7 +224,7 @@
       "Centaur V",
     ],
     min_stages : 1,
-    // Calibrated for VC6 LEO
+    // Calibrated for VC6 GTO
     orbit_deltav : 8869,
     launch_thrust : 4800,
     boosters : ["GEM 63XL"],
