@@ -134,6 +134,38 @@
     booster_counts : [2],
   },
   {
+    name : "Thor Ablestar",
+    stages : [
+      [48.35, 2.95, 267.5, 760.64],
+      [4.47, .59, 278, 363.2],
+    ],
+    min_stages : 2,
+    orbit_deltav : 9198,
+    launch_thrust : 667.2,
+  },
+  {
+    name : "Thor Agena B",
+    stages : [
+      [49.34, 3.13, 265, 758.711],
+      [4.47, .59, 278, 363.2],
+    ],
+    min_stages : 2,
+    orbit_deltav : 8385,
+    launch_thrust : 667.2,
+  },
+  {
+    name : "Atlas Agena A",
+    stages : [
+      // Reverse engineered fuel distribution based on burn times
+      [93.62, 3.05, 264, 1880.6],
+      [26.58, 2.39, 309, 363.2],
+      [3.79, 0.885, 276, 68.95],
+    ],
+    min_stages : 2,
+    orbit_deltav : 8144,
+    launch_thrust : 1587.2,
+  },
+  {
     name : "Atlas D",
     stages : [
       // Reverse engineered fuel distribution based on burn times
