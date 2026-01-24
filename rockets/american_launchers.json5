@@ -166,6 +166,18 @@
     launch_thrust : 1587.2,
   },
   {
+    name : "Atlas Agena B",
+    stages : [
+      // Reverse engineered fuel distribution based on burn times
+      [89.14, 3.17, 269, 2031.26],
+      [31.06, 2.33, 309, 363.2],
+      [7.17, 0.867, 285, 71.166],
+    ],
+    min_stages : 2,
+    orbit_deltav : 8810,
+    launch_thrust : 1750.3,
+  },
+  {
     name : "Atlas D",
     stages : [
       // Reverse engineered fuel distribution based on burn times
