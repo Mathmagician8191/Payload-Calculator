@@ -177,7 +177,7 @@
     name : "Atlas V DEC",
     stages : [
       "Common Core Booster",
-      [21.13, 2.62, 450.5, 99.2],
+      [21.13, 2.62, 450.5, 198.4],
     ],
     min_stages : 2,
     // ISS calibrated only
