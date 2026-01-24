@@ -130,10 +130,10 @@
     stages : [
       // Reverse engineered fuel distribution based on burn times
       [90.57, 0, 264, 1880.6],
-      [23.77, 3.64, 303, 363.2],
+      [23.77, 3.64, 309, 363.2],
     ],
     min_stages : 2,
-    orbit_deltav : 9260,
+    orbit_deltav : 9369,
     launch_thrust : 1587.2,
   },
   {
