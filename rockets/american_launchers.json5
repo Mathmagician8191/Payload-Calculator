@@ -147,10 +147,20 @@
     name : "Thor Agena B",
     stages : [
       [49.34, 3.13, 265, 758.711],
-      [4.47, .59, 278, 363.2],
+      [7.17, 0.867, 285, 71.166],
     ],
     min_stages : 2,
-    orbit_deltav : 8385,
+    orbit_deltav : 8409,
+    launch_thrust : 667.2,
+  },
+  {
+    name : "Thor Agena D",
+    stages : [
+      [49.34, 3.13, 265, 758.711],
+      [6.82, 0.673, 300, 71.17],
+    ],
+    min_stages : 2,
+    orbit_deltav : 8161,
     launch_thrust : 667.2,
   },
   {
