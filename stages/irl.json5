@@ -196,6 +196,15 @@
     thrust : 9116,
   },
   {
+    name : "Molniya Booster",
+    wet_mass : 43.4,
+    dry_mass : 3.8,
+    isp : 285.5,
+    thrust : 995.3,
+    launch_thrust : 814.6,
+    asparagus : false
+  },
+  {
     name : "Soyuz Booster",
     wet_mass : 44.42,
     dry_mass : 3.78,
@@ -281,6 +290,13 @@
     thrust : 1033.1
   },
   {
+    name : "Ares Stage 2",
+    wet_mass : 150.3,
+    dry_mass : 15.2,
+    isp : 428,
+    thrust : 1307
+  },
+  {
     name : "Centaur V",
     wet_mass : 53.6,
     dry_mass : 7.1,
@@ -288,11 +304,18 @@
     thrust : 203.6,
   },
   {
-    name : "Ares Stage 2",
-    wet_mass : 150.3,
-    dry_mass : 15.2,
-    isp : 428,
-    thrust : 1307
+    name : "Agena B",
+    wet_mass : 7.17,
+    dry_mass : 0.867,
+    isp : 285,
+    thrust : 71.166,
+  },
+  {
+    name : "Agena D",
+    wet_mass : 6.82,
+    dry_mass : 0.673,
+    isp : 300,
+    thrust : 71.166,
   },
   {
     name : "LR87",
@@ -307,6 +330,14 @@
     dry_mass : 4.5,
     isp : 316,
     thrust : 459.51
+  },
+  {
+    name : "Thor",
+    wet_mass : 49.34,
+    dry_mass : 3.13,
+    isp : 265,
+    thrust : 758.711,
+    launch_thrust : 667.2,
   },
   {
     name : "Minuteman",
@@ -354,9 +385,17 @@
     asparagus : false,
   },
   {
+    name : "Castor 1",
+    wet_mass : 3.852,
+    dry_mass : 0.535,
+    isp : 240,
+    thrust : 286,
+    launch_thrust: 268.63,
+  },
+  {
     name : "Orion 38",
-    wet_mass : .873,
-    dry_mass : .0935,
+    wet_mass : 0.873,
+    dry_mass : 0.0935,
     isp : 287,
     thrust : 32.7,
   },

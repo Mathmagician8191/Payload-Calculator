@@ -146,22 +146,26 @@
   {
     name : "Thor Agena B",
     stages : [
-      [49.34, 3.13, 265, 758.711],
-      [7.17, 0.867, 285, 71.166],
+      "Thor",
+      "Agena B",
     ],
     min_stages : 2,
     orbit_deltav : 8409,
     launch_thrust : 667.2,
+    boosters : ["Castor 1"],
+    booster_counts : [3],
   },
   {
     name : "Thor Agena D",
     stages : [
-      [49.34, 3.13, 265, 758.711],
-      [6.82, 0.673, 300, 71.17],
+      "Thor",
+      "Agena D",
     ],
     min_stages : 2,
     orbit_deltav : 8161,
     launch_thrust : 667.2,
+    boosters : ["Castor 1"],
+    booster_counts : [3],
   },
   {
     name : "Atlas Agena A",
@@ -180,12 +184,24 @@
     stages : [
       // Reverse engineered fuel distribution based on burn times
       [89.14, 3.17, 269, 2031.26],
-      [31.06, 2.33, 309, 363.2],
-      [7.17, 0.867, 285, 71.166],
+      [31.06, 2.33, 316, 363.2],
+      "Agena B",
     ],
     min_stages : 2,
-    orbit_deltav : 8810,
+    orbit_deltav : 8901,
     launch_thrust : 1750.3,
+  },
+  {
+    name : "Atlas Agena D",
+    stages : [
+      // Reverse engineered fuel distribution based on burn times
+      [138.42, 3.65, 267, 2282.2],
+      [7.23, 3.7, 316, 363.2],
+      "Agena D",
+    ],
+    min_stages : 2,
+    orbit_deltav : 8424,
+    launch_thrust : 1916.26,
   },
   {
     name : "Atlas D",
