@@ -340,6 +340,14 @@
     launch_thrust : 667.2,
   },
   {
+    name : "Thor-Delta",
+    wet_mass : 48.35,
+    dry_mass : 2.95,
+    isp : 268,
+    thrust : 760.643,
+    launch_thrust : 667.23,
+  },
+  {
     name : "Minuteman",
     wet_mass : 23.08,
     dry_mass : 2.29,

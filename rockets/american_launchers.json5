@@ -202,6 +202,8 @@
     min_stages : 2,
     orbit_deltav : 8424,
     launch_thrust : 1916.26,
+    boosters : ["Castor 1"],
+    booster_counts : [3],
   },
   {
     name : "Atlas D",
@@ -257,6 +259,17 @@
     // TODO: find information about AJ-60A
     boosters : ["GEM 63", "GEM 63XL"],
     booster_counts : [1, 2, 3, 4, 5],
+  },
+  {
+    name : "Delta C",
+    stages : [
+      "Thor-Delta",
+      [2.693, 0.545, 278, 33.695],
+      [0.238, 0.03, 233, 12.45],
+    ],
+    min_stages : 2,
+    orbit_deltav : 9008,
+    launch_thrust : 667.23,
   },
   {
     name : "Pegasus",
