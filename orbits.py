@@ -1,4 +1,4 @@
-from math import sqrt, sin, cos, pi, hypot
+from math import sqrt, sin, cos, acos, pi, hypot
 from celestial_bodies import *
 
 # velocity of a circular orbit at the provided height above the surface
@@ -52,13 +52,16 @@ def transfer(start_height, final_height, target_planet, return_trip=False, home_
 
 # estimate of extra delta-v penalty to launch into an inclined orbit
 # assumes the launch site is at the equator
-def incline(angle, height=LOW_ORBIT, planet=DEFAULT):
+def incline(angle, latitude=0, height=LOW_ORBIT, planet=DEFAULT):
+  assert angle >= latitude
   angle *= pi / 180
+  latitude *= pi / 180
   velocity = circular(height, planet)
   baseline = velocity - planet[ROTATION]
-  horizontal = velocity * cos(angle)
-  vertical = velocity * sin(angle)
-  new = hypot((horizontal - planet[ROTATION]), vertical)
+  azimuth = acos(cos(angle) / cos(latitude))
+  horizontal = velocity * cos(azimuth)
+  vertical = velocity * sin(azimuth)
+  new = hypot((horizontal - planet[ROTATION] * cos(latitude)), vertical)
   return new - baseline
 
 # plane change at the given height
