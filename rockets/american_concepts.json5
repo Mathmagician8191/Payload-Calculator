@@ -83,8 +83,8 @@
       "Centaur V",
     ],
     min_stages : 2,
-    // assumed identical to SLS Block 1B
-    orbit_deltav : 9777,
+    // based of estimated TLI payload
+    orbit_deltav : 9663,
     launch_thrust : 7440,
     boosters : ["4-segment SRB","5-segment SRB"],
     booster_counts : [2],
