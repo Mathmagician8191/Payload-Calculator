@@ -233,6 +233,16 @@
     asparagus : false
   },
   {
+    name : "P160C",
+    wet_mass : 169,
+    dry_mass : 13,
+    // Unknown whether isp/thrust are sea level or vacuum
+    isp : 279,
+    thrust : 4780,
+    launch_thrust : 4780,
+    asparagus : false
+  },
+  {
     name : "Common Core Booster",
     wet_mass : 284.09,
     dry_mass : 21.05,
@@ -340,6 +350,14 @@
     launch_thrust : 667.2,
   },
   {
+    name : "Thor LT",
+    wet_mass : 70.354,
+    dry_mass : 3.715,
+    isp : 265,
+    thrust : 758.711,
+    launch_thrust : 667.2,
+  },
+  {
     name : "Thor-Delta",
     wet_mass : 48.35,
     dry_mass : 2.95,
@@ -399,6 +417,15 @@
     isp : 240,
     thrust : 286,
     launch_thrust: 268.63,
+  },
+  {
+    name : "Castor 2",
+    wet_mass : 4.32,
+    // Assuming same mass ratio/isp as castor 1
+    dry_mass : 0.6,
+    isp : 240,
+    thrust : 259,
+    launch_thrust: 259,
   },
   {
     name : "Orion 38",

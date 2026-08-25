@@ -168,6 +168,18 @@
     booster_counts : [3],
   },
   {
+    name : "Thorad Agena",
+    stages : [
+      "Thor LT",
+      "Agena D",
+    ],
+    min_stages : 2,
+    orbit_deltav : 8161,
+    launch_thrust : 667.2,
+    boosters : ["Castor 1", "Castor 2"],
+    booster_counts : [3],
+  },
+  {
     name : "Atlas Agena A",
     stages : [
       // Reverse engineered fuel distribution based on burn times
@@ -190,6 +202,8 @@
     min_stages : 2,
     orbit_deltav : 8901,
     launch_thrust : 1750.3,
+    boosters : ["Castor 1"],
+    booster_counts : [3],
   },
   {
     name : "Atlas Agena D",

@@ -50,6 +50,22 @@
     "booster_counts" : [2],
   },
   {
+    name : "Ariane 6",
+    stages : [
+      // Using vacuum isp - sea level isp unknown
+      // Assuming dry mass is 10% of wet mass - dry mass is unknown
+      [155.5, 15.5, 429, 1324],
+      [38, 6, 457.2, 180],
+    ],
+    min_stages : 2,
+    // Calibrated for GTO
+    orbit_deltav : 12120,
+    booster_offset : -530,
+    launch_thrust : 1324,
+    "boosters" : ["P120C", "P160C"],
+    "booster_counts" : [2, 4],
+  },
+  {
     name : "Vega",
     stages : [
       // Unknown if thrust/isp is sea level, vacuum or a mix
